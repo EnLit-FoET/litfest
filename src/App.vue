@@ -1,7 +1,20 @@
+<script>
+import HeaderComp from './components/HeaderComp.vue';
+export default {
+  components: { HeaderComp }
+}
+</script>
+
+<style>
+  body{
+    scroll-behavior: smooth;
+  }
+</style>
+
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
-  <router-view/>
+  <HeaderComp/>
+  <main class="container">
+    <router-view></router-view>
+  </main>
+  
 </template>
