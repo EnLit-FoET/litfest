@@ -6,14 +6,16 @@ export default {
 </script>
 
 <style>
+@import "@/assets/global.css";
   body{
     scroll-behavior: smooth;
+    font-family: 'Archivo';
   }
 </style>
 
 <template>
   <HeaderComp/>
-  <main class="container">
+  <main class="">
     <router-view></router-view>
   </main>
   

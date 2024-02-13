@@ -2,7 +2,7 @@
     <header class="container-fluid">
         <nav>
             <ul>
-                <li><router-link to="/"><h2>Lit Fest <sup>2024</sup></h2></router-link></li>
+                <li><router-link to="/"><h2>Lit Fest <sup class="teal">2024</sup></h2></router-link></li>
             </ul>
             <ul>
                 <li>
