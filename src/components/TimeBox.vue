@@ -1,96 +1,94 @@
 <template>
-  <div id="countdown" style="letter-spacing: 5px">
+  <div id="countdown">
     <div>
-      <span class="cal">{{ days }}</span>
-      <span class="cap"> Days</span>
+      <span class="cal">{{ displayDays }}</span>
+      <span class="cap theme1"> Days</span>
     </div>
     <div>
-      <span class="cal">{{ hours }}</span>
-      <span class="cap"> Hours</span>
+      <span class="cal">{{ displayHours }}</span>
+      <span class="cap theme2"> Hours</span>
     </div>
     <div>
-      <span class="cal">{{ minutes }}</span>
-      <span class="cap"> Minutes</span>
+      <span class="cal">{{ displayMinutes }}</span>
+      <span class="cap theme1"> Minutes</span>
     </div>
     <div>
-      <span class="cal">{{ seconds }}</span>
-      <span class="cap"> Seconds</span>
+      <span class="cal">{{ diaplaySeconds }}</span>
+      <span class="cap theme2"> Seconds</span>
     </div>
   </div>
 </template>
 
 <script>
 export default {
-  name: "TimeBox",
-  data() {
-    return {
-      eventDate: "April 3, 2024", 
-      days: "00",
-      hours: "00",
-      minutes: "00",
-      seconds: "00",
-      units: {
-        days: "Days",
-        hours: "Hours",
-        minutes: "Minutes",
-        seconds: "Seconds",
-      },
-    };
-  },
+  data: () => ({
+    displayDays: 0,
+    displayHours: 0,
+    displayMinutes: 0,
+    diaplaySeconds: 0,
+  }),
 
-  props: {
-    event_date: String,
+  computed: {
+    seconds: () => 1000,
+    minutes() {
+      return this.seconds * 60;
+    },
+    hours() {
+      return this.minutes * 60;
+    },
+    days() {
+      return this.hours * 24;
+    },
   },
-  mounted() {
-    this.countdown();
-    setInterval(this.countdown, 1000);
+  mounted(){
+    this.showRemaining();
   },
   methods: {
-    countdown() {
-      var current_date = new Date().getTime();
-      var target_date = new Date(this.event_date).getTime();
-      var seconds_left = (target_date * 2 - current_date) / 1000;
+    showRemaining() {
+      const timer = setInterval(() => {
+        const now = new Date();
+        const end = new Date(2024, 3, 4, 10, 10, 10);
+        const distance = end.getTime() - now.getTime();
+        if (distance<0){
+          clearInterval(timer);
+          return
+        }
 
-      this.days = this.pad(parseInt(seconds_left / 86400));
-      seconds_left = seconds_left % 86400;
+        const days = Math.floor(distance/this.days);
+        const hours = Math.floor((distance%this.days) / this.hours);
+        const minutes = Math.floor((distance%this.hours) / this.minutes);
+        const seconds = Math.floor((distance%this.minutes) / this.seconds);
+        this.displayMinutes = minutes <10? "0" + minutes : minutes;
+        this.diaplaySeconds = seconds <10? "0" + seconds : seconds;
+        this.displayHours = hours <10? "0" + hours : hours;
+        this.displayDays = days <10? "0" + days : days;
 
-      this.hours = this.pad(parseInt(seconds_left / 3600));
-      seconds_left = seconds_left % 3600;
-
-      this.minutes = this.pad(parseInt(seconds_left / 60));
-      this.seconds = this.pad(parseInt(seconds_left % 60));
-    },
-    pad(n) {
-      return (n < 10 ? "0" : "") + n;
+      },1000);
     },
   },
 };
 </script>
 
 <style>
+
 .cal {
-  font-size: 2.6em;
+  font-size: 2em;
 }
 .cap {
-  font-size: 1em;
+  font-size: 0.9em;
 }
 
 #countdown {
   color: white;
   display: flex;
-  margin: 35px auto;
-  width: 417px;
+  margin: 25px 0;
+  min-width: fit-content;
 }
 #countdown div {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin: 0 10px;
-}
-#countdown div span:first-child {
-  padding: 5px 10px;
-  border-radius: 5px;
-  color: #fff;
 }
 
 /* --------------media-querry------------ */

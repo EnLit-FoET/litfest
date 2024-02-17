@@ -1,55 +1,33 @@
 <template>
-  <div class="line" style="background-color: #fcc6d3">
-    <a href="#">Lets gooooooooo >>></a>
-  </div>
-  <div class="line" style="background-color: #68e8e8">
-    <a href="#">Lets gooooooooo >>></a>
-  </div>
   <section id="events">
     <h1 class="main-heading">Events</h1>
-    <section id="sec1">
-      <h1 class="event-head">Alphaaz</h1>
+    <img src="../assets/images/influencers.svg" alt="influencers" class="inf">
+    <h1 class="main-heading">Competitions</h1>
+    <section v-for="event in events" :key="event.title" :style="{ backgroundImage: `linear-gradient(#00000099, #00000099), ${event.backgroundImage}` }" :class="`head-space-cont ${event.title.toLowerCase()}`">
       <div>
-        <img src="">
-      </div>
-    </section>
-    <section id="sec2">
-      <h1 class="event-head">RangRaaz</h1>
-      <div>
-      </div>
-    </section>
-    <section id="sec3">
-      <h1 class="event-head">Word Odyssey</h1>
-      <div>
-        <article>
-          <header>Creative Writing</header>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi,
-            necessitatibus!
-          </p>
-        </article>
-      </div>
-    </section>
-    <section id="sec4">
-      <h1 class="event-head">Fables and Tales</h1>
-      <div>
-        <article>
-          <header>Creative Writing</header>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi,
-            necessitatibus!
-          </p>
-        </article>
+        <h1 class="heading">{{ event.title }}</h1>
+        <div class="more">
+          <p>{{ event.para }}</p>
+          <a :href="event.linkto">View More</a>
+        </div>
       </div>
     </section>
   </section>
 </template>
 
+
+
 <style>
 .main-heading {
-  margin-top: 3%;
-  font-size: 4rem;
+  padding-top: 3%;
+  font-size: 3.5rem;
   text-align: center;
+  color: #fff;
+  background-color: #00000000;
+}
+
+.inf{
+  width: 100%;
 }
 
 #events {
@@ -70,17 +48,51 @@
   padding: 5% 0;
 }
 
-.line {
-  width: 100%;
-  height: fit-content;
-  padding: 0.7% 5%;
-  margin-top: 5px;
-}
-
-.line a{
+.head-space-cont .more a{
   text-decoration: none;
+  padding: 2% 3%;
+  font-weight: 500;
+  background-color: #fff;
   color: #000;
-  
-
+}
+.head-space-cont .more a:hover{
+  background-color: var(--theme2);
+  color: #fff;
 }
 </style>
+
+<script>
+export default {
+  data() {
+    return {
+      events: [
+        {
+          title: 'Alfaaz',
+          backgroundImage: 'url(../assets/images/drama1.JPG)',
+          para: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel veniam maxime dolores eius dolorum, odit magni provident est odio nesciunt quasi error tempora doloremque accusamus.',
+          linkto: '#alphaaz'
+        },
+        {
+          title: 'RangRaaz',
+          backgroundImage: 'url(../assets/images/drama1.JPG)',
+          para: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel veniam maxime dolores eius dolorum, odit magni provident est odio nesciunt quasi error tempora doloremque accusamus.',
+          linkto: '#rangraaz'
+        },
+        {
+          title: 'Word Odyssey',
+          backgroundImage: 'url(../assets/images/speech.JPG)',
+          para: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel veniam maxime dolores eius dolorum, odit magni provident est odio nesciunt quasi error tempora doloremque accusamus.',
+          linkto: '#word'
+        },
+        {
+          title: 'Fables and Tales',
+          backgroundImage: 'url(../assets/images/drama1.JPG)',
+          para: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel veniam maxime dolores eius dolorum, odit magni provident est odio nesciunt quasi error tempora doloremque accusamus.',
+          linkto: '#fandt'
+        },
+      ]
+    };
+  }
+};
+
+</script>
