@@ -85,10 +85,10 @@ export default {
           linkto: '#word'
         },
         {
-          title: 'Fables and Tales',
+          title: 'Nagma',
           backgroundImage: 'url(../assets/images/drama1.JPG)',
           para: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel veniam maxime dolores eius dolorum, odit magni provident est odio nesciunt quasi error tempora doloremque accusamus.',
-          linkto: '#fandt'
+          linkto: '#nagma'
         },
       ]
     };
