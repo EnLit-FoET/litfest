@@ -3,7 +3,7 @@
     <h1 class="main-heading">Events</h1>
     <img src="../assets/images/influencers.svg" alt="influencers" class="inf">
     <h1 class="main-heading">Competitions</h1>
-    <section v-for="event in events" :key="event.title" :style="{ backgroundImage: `linear-gradient(#00000099, #00000099), ${event.backgroundImage}` }" :class="`head-space-cont ${event.title.toLowerCase()}`">
+    <section v-for="event in events" :key="event.title" :style="{ background: ` ${event.backgroundImage}` }" :class="`head-space-cont ${event.title.toLowerCase()}`">
       <div>
         <h1 class="heading">{{ event.title }}</h1>
         <div class="more">
@@ -74,7 +74,7 @@ export default {
         },
         {
           title: 'RangRaaz',
-          backgroundImage: 'url(../assets/images/drama1.JPG)',
+          backgroundImage: 'url(https://raw.githubusercontent.com/EnLit-FoET/litfest/main/src/assets/images/rangrachna.jpg?token=GHSAT0AAAAAACNOIMTXAMATDWQMKVKAWRIIZOQ5FTQ)',
           para: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel veniam maxime dolores eius dolorum, odit magni provident est odio nesciunt quasi error tempora doloremque accusamus.',
           linkto: '#rangraaz'
         },
@@ -86,7 +86,7 @@ export default {
         },
         {
           title: 'Nagma',
-          backgroundImage: 'url(../assets/images/drama1.JPG)',
+          backgroundImage: 'url(https://github.com/EnLit-FoET/litfest/blob/main/src/assets/images/nagma.JPG)',
           para: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel veniam maxime dolores eius dolorum, odit magni provident est odio nesciunt quasi error tempora doloremque accusamus.',
           linkto: '#nagma'
         },
