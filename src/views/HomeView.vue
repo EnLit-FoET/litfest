@@ -52,7 +52,7 @@ export default {
   line-height: 1em;
   padding: 0;
   margin: 0;
-  font-size: 3em;
+  font-size: 3rem;
 }
 #heading {
   font-size: 9rem !important;
@@ -67,6 +67,17 @@ export default {
   }
   100% {
     opacity: 1;
+  }
+}
+
+@media  screen and (max-width:430px){
+  #hero p{
+    width: 85%;
+  }
+}
+@media  screen and (max-width:350px){
+  #heading{
+    font-size: 6em !important;
   }
 }
 </style>

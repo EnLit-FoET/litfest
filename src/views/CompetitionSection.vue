@@ -56,7 +56,7 @@
 }
 #nagma {
   background: linear-gradient(#00000061, #00000061),
-    url(../assets/images/nagma.jpg);
+    url(../assets/images/nagma.JPG);
 }
 
 .competition{
@@ -111,6 +111,41 @@
   color: var(--theme2);
   background-color: var(--theme1);
 }
+
+ 
+@media only screen and (max-width: 930px) {
+    .img img{
+      width: 100% !important;
+    }
+  
+    .img, .detail{
+      width: 45%;
+    }
+  
+    .media-partners{
+      flex-direction: column;
+    }
+  
+    .media-partners img{
+      margin: 2% 0;
+    }
+  }
+  @media only screen and (max-width: 600px) {
+    .competition{
+      flex-direction: column !important;
+      align-items: center;
+      justify-content: space-evenly;
+      margin-bottom: 27px;
+    }
+    .detail, .img{
+      width: 90% !important;
+    }
+
+    .img omg{
+      width: 90% !important;
+    }
+  }
+
 </style>
 
 <script>
@@ -156,7 +191,7 @@ export default {
         },
         { 
           id: "rangrachna",
-          title: "RangRachna",
+          title: "Rang Rachna",
           eventnames: [
             {
               eventName: "Meme Making",

@@ -22,6 +22,17 @@
 .inf {
   width: 100%;
 }
+
+@media  screen and (max-width:600px){
+  .main-heading{
+    font-size: 2.5em;
+  }
+}
+@media  screen and (max-width:300px){
+  .main-heading{
+    font-size: 2em;
+  }
+}
 </style>
 
 <script>

@@ -98,6 +98,16 @@
   background: linear-gradient(#00000079, #00000079),
     url(../assets/images/about.JPG);
 }
+
+@media screen and (max-width: 350px) {
+  .head-space-cont div{
+    width: 100%;
+  }
+
+  .line{
+    font-size: smaller;
+  }
+}
 </style>
 
 <script>

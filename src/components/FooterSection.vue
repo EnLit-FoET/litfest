@@ -180,6 +180,15 @@
   
   
   }
+
+  @media screen and (max-width: 350px) {
+  iframe{
+    width: 80%;
+  }
+  .venue p{
+    width: 90%;
+  }
+}
   </style>
   
   <script>
