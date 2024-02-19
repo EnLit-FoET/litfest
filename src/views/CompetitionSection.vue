@@ -31,7 +31,7 @@
 
 #events section {
   background-attachment: fixed !important;
-  height: 70vh;
+  height: 70vh !important;
 }
 .event-head {
   padding: 5% 0;

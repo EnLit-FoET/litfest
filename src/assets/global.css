@@ -68,10 +68,19 @@
     font-style: normal;
   }
 
+  body::-webkit-scrollbar {
+    display: none;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
   :root{
     --theme1: teal;
     --theme2: #ffffff;
-    /* --theme2: #ff006d; */
   }
   
 

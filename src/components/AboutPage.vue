@@ -13,9 +13,12 @@
       <h1 class="heading">About Lit-Fest</h1>
       <div class="more">
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel veniam
-          maxime dolores eius dolorum, odit magni provident est odio nesciunt
-          quasi error tempora doloremque accusamus.
+          Lit-Fiesta unfolds as a grand literature extravaganza, where the
+          immerse captivating fusion of authors, poets, and literary enthusiasts
+          as they weave tales, share insights, and explore the diverse
+          landscapes of verse revelries. Step into this three-day odyssey, where
+          literary prowess takes center stage, and let the words weave a
+          tapestry of inspiration and excellence.
         </p>
       </div>
     </div>
@@ -100,11 +103,11 @@
 }
 
 @media screen and (max-width: 350px) {
-  .head-space-cont div{
+  .head-space-cont div {
     width: 100%;
   }
 
-  .line{
+  .line {
     font-size: smaller;
   }
 }

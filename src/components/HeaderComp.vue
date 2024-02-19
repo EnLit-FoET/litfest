@@ -12,19 +12,19 @@
         <li><a href="#about" class="contrast dissappear">About</a></li>
         <li><a href="#events" class="contrast dissappear">Events</a></li>
         <li :aria-busy="this.loading">
-          <a
+          <router-link
             v-if="!this.loading && !this.loggedIn"
             role="button"
             class="outline contrast"
-            href="#"
-            >Login</a
+            to="/register"
+            >Login</router-link
           >
-          <a
+          <router-link
             v-else-if="!this.loading && this.loggedIn"
             role="button"
             class="outline contrast"
-            href="#"
-            >Dashboard</a
+            to="/dashboard"
+            >Dashboard</router-link
           >
         </li>
       </ul>
@@ -45,7 +45,7 @@ export default {
   data() {
     return {
       loading: true,
-      loggedIn: true,
+      loggedIn: false,
     };
   },
   mounted() {
