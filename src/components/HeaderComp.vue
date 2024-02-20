@@ -9,7 +9,7 @@
         </li>
       </ul>
       <ul>
-        <li v-if="!this.loading && !this.loggedIn">
+        <li v-if="!this.loading && !loggedIn">
           <router-link
             role="button"
             class="outline contrast"
@@ -18,7 +18,7 @@
             >Login</router-link
           >
         </li>
-        <li v-else-if="this.loggedIn">
+        <li v-else-if="loggedIn">
           <ul>
             <li>
               <router-link
@@ -72,25 +72,38 @@
 </style>
 
 <script>
+  import { ref } from "vue";
+  import { getAuth, onAuthStateChanged, signOut } from "firebase/auth";
+
+  let auth;
 export default {
   data() {
     return {
       loading: true,
-      loggedIn: true,
-      dashboardOpen: false,
+      dashboardOpen: true,
+      loggedIn: ref(false),
     };
   },
   mounted() {
     setTimeout(() => {
       this.loading = false;
     }, 2000);
+    auth = getAuth();
+    onAuthStateChanged(auth, (user)=>{
+      if(user){
+        this.loggedIn = true;
+      }else{
+        this.loggedIn = false;
+      }
+      console.log(this.loggedIn);
+    });
   },
   methods: {
     toggleDashboard() {
       this.dashboardOpen = !this.dashboardOpen;
     },
     logout() {
-      this.loggedIn = !this.loggedIn;
+      signOut(auth);
     },
   },
 };
