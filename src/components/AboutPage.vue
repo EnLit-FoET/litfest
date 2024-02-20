@@ -1,6 +1,6 @@
 <template>
   <div class="divider">
-    <a href="#register" class="line">Register Now >>></a>
+    <router-link to="/dashboard" class="line">Register Now >>></router-link>
     <a href="#events" class="line">Know More About Competitions >>></a>
   </div>
   <div class="participation"></div>

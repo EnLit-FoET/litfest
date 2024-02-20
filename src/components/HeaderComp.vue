@@ -80,7 +80,7 @@ export default {
   data() {
     return {
       loading: true,
-      dashboardOpen: true,
+      dashboardOpen: ref(true),
       loggedIn: ref(false),
     };
   },
@@ -92,6 +92,7 @@ export default {
     onAuthStateChanged(auth, (user)=>{
       if(user){
         this.loggedIn = true;
+        this.dashboardOpen = true;
       }else{
         this.loggedIn = false;
       }
