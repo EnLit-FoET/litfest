@@ -9,23 +9,46 @@
         </li>
       </ul>
       <ul>
-        <li><a href="#about" class="contrast dissappear">About</a></li>
-        <li><a href="#events" class="contrast dissappear">Events</a></li>
-        <li :aria-busy="this.loading">
+        <li v-if="!this.loading && !this.loggedIn">
           <router-link
-            v-if="!this.loading && !this.loggedIn"
             role="button"
             class="outline contrast"
             to="/register"
+            :aria-busy="this.loading"
             >Login</router-link
           >
-          <router-link
-            v-else-if="!this.loading && this.loggedIn"
-            role="button"
-            class="outline contrast"
-            to="/dashboard"
-            >Dashboard</router-link
-          >
+        </li>
+        <li v-else-if="this.loggedIn">
+          <ul>
+            <li>
+              <router-link
+                v-if="this.dashboardOpen"
+                role="button"
+                class="route-link"
+                to="/"
+                @click="toggleDashboard()"
+                >Home</router-link
+              >
+              <router-link
+                v-if="!this.dashboardOpen"
+                role="button"
+                class="route-link"
+                to="/dashboard"
+                @click="toggleDashboard()"
+                >Dashboard</router-link
+              >
+            </li>
+            <li v-if="!this.loading">
+              <router-link
+                role="button"
+                class="outline contrast"
+                :aria-busy="this.loading"
+                to="/"
+                @click="logout()"
+                >Logout</router-link
+              >
+            </li>
+          </ul>
         </li>
       </ul>
     </nav>
@@ -33,6 +56,14 @@
 </template>
 
 <style>
+.route-link {
+  background-color: #000000;
+  border: none;
+}
+.route-link:hover {
+  text-decoration: underline;
+}
+
 @media screen and (max-width: 350px) {
   .dissappear {
     display: none !important;
@@ -45,7 +76,8 @@ export default {
   data() {
     return {
       loading: true,
-      loggedIn: false,
+      loggedIn: true,
+      dashboardOpen: false,
     };
   },
   mounted() {
@@ -53,5 +85,14 @@ export default {
       this.loading = false;
     }, 2000);
   },
+  methods: {
+    toggleDashboard() {
+      this.dashboardOpen = !this.dashboardOpen;
+    },
+    logout() {
+      this.loggedIn = !this.loggedIn;
+    },
+  },
 };
 </script>
+
