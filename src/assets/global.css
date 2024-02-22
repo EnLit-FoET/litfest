@@ -76,6 +76,7 @@
     scroll-behavior: smooth;
     -ms-overflow-style: none;
     scrollbar-width: none;
+    box-sizing: border-box;
   }
 
   :root{

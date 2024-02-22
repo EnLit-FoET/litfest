@@ -1,7 +1,7 @@
 <template>
   <h1 class="main-head">Associates</h1>
-  <div class="associates">
-    <div v-for="(slide, index) in slides" :key="index" class="ass-slide">
+  <div class="marquee">
+    <div v-for="(slide, index) in slides" :key="index" class="ass-slide marquee-content scroll">
       <img
         v-for="ass in associates"
         :key="ass.id"
@@ -69,16 +69,6 @@
   width: 300px;
   background-color: var(--theme2);
 }
-
-@keyframes slider {
-  from {
-    transform: translateX(0%);
-  }
-  to {
-    transform: translateX(-100%);
-  }
-}
-
 .main-head {
   padding: 4% 0;
   margin: 2% 0;
@@ -86,16 +76,10 @@
   text-align: center;
   color: var(--theme2);
 }
-.associates {
-  overflow: hidden;
-  padding: 35px 0;
-  background-color: var(--theme2);
-  white-space: nowrap;
-  position: relative;
-}
 
-.associates::before,
-.associates::after {
+
+.marquee::before,
+.marquee::after {
   position: absolute;
   top: 0;
   width: 17%;
@@ -103,36 +87,71 @@
   content: "";
   z-index: 2;
 }
-.associates::after {
+.marquee::after {
   right: 0;
   background: linear-gradient(to left, #000, #00000000);
 }
-.associates::before {
+.marquee::before {
   left: 0;
   background: linear-gradient(to right, #000, #00000000);
 }
 
-.ass-slide {
+.marquee {
+  overflow: hidden;
+  display: flex;
+  gap: 1vw;
+  align-items: center;
+  position: relative;
+  user-select: none;
   background-color: var(--theme2);
-  display: inline-block;
-  animation: 15s slider infinite linear !important;
 }
 
-.associates:hover .ass-slide {
+.marquee-content {
+  background-color: var(--theme2);
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  min-width: 100%;
+  gap: 1vw;
+  padding: 7px 0;
+}
+
+.marquee-content p {
+  font-weight: 600;
+  font-size: 1.7vw;
+  margin: 0;
+  padding: 0;
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(calc(-100% - 1vw)); 
+  }
+}
+
+.scroll {
+  animation: scroll 10s linear infinite !important;
+}
+
+.marquee:hover .marquee-content {
   animation-play-state: paused !important;
 }
-.ass-slide img {
+.marquee-content img {
   background-color: var(--theme2);
   height: 150px;
   margin: 0 40px;
 }
 
-@media screen and (max-width: 768px) {
-  .ass-slide img {
+/* @media screen and (max-width: 768px) {
+  .marquee-content img {
     height: 100px;
   }
-}
-
+} */
+/* 
 @media screen and (max-width: 480px) {
   .ass-slide {
     animation: none !important;
@@ -160,7 +179,7 @@
     width: 250px;
     margin: 11px 0;
   }
-}
+} */
 
 @media screen and (max-width: 350px) {
   .media-partners img {
