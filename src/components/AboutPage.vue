@@ -1,7 +1,7 @@
 <template>
   <div class="divider">
     <router-link to="/dashboard" class="line">Register Now >>></router-link>
-    <a href="#events" class="line">Know More About Competitions >>></a>
+    <a href="#competition" class="line">Know More About Competitions >>></a>
   </div>
   <div class="participation"></div>
   <section id="about" class="head-space-cont">

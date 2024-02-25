@@ -3,7 +3,7 @@
     <nav>
       <ul>
         <li>
-          <router-link to="/"
+          <router-link to="/" class="logo"
             ><h2>Lit Fest <sup class="theme1">2024</sup></h2></router-link
           >
         </li>
@@ -56,6 +56,10 @@
 </template>
 
 <style>
+
+.logo:hover{
+  text-decoration: none;
+}
 .route-link {
   background-color: #000000;
   border: none;
@@ -96,7 +100,6 @@ export default {
       }else{
         this.loggedIn = false;
       }
-      console.log(this.loggedIn);
     });
   },
   methods: {

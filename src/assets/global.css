@@ -99,11 +99,23 @@
 
   *::selection{
     color: #000;
-    background-color: #fff;
+    background-color: var(--theme2);
   }
 
   @media screen and (max-width: 280px) {
     *{
       overflow-x: hidden !important;
     }
+  }
+
+  .btn {
+    border: 2px solid var(--theme1);
+    background-color: var(--theme1);
+    font-weight: 500;
+    border-radius: 0;
+    padding: auto 25px;
+  }
+  .btn:hover {
+    background-color: var(--theme2);
+    color: #000;
   }

@@ -1,7 +1,7 @@
 <template>
   <div class="googleLogin">
     <div id="id">
-      <button @click="handleGoogleLogin()">Sign In With Google</button>
+      <button @click="handleGoogleLogin()" class="btn">Sign In With Google</button>
     </div>
   </div>
 </template>
@@ -40,18 +40,6 @@ export default {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-#id button {
-  border: 2px solid var(--theme1);
-  background-color: var(--theme1);
-  font-weight: 500;
-  border-radius: 0;
-  padding: auto 25px;
-}
-#id button:hover {
-  background-color: var(--theme2);
-  color: #000;
 }
 
 @media screen and (max-width: 800px) {

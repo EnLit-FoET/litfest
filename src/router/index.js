@@ -12,7 +12,7 @@ const router = createRouter({
     },
     {path: "/competitions", component: () => import("../views/CompetitionSection.vue")},
     {path: "/dashboard", component: DashBoard, meta: {requiresAuth : true}},
-    {path: "/rulebook", component: () => import("../components/RuleBook.vue"), meta: {requiresAuth : true}},
+    {path: "/rulebook/:to", component: () => import("../components/RuleBook.vue"), meta: {requiresAuth : true}},
     {path: "/register", component: () => import("../components/SignUp.vue")},
   ]
 })

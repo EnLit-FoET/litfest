@@ -4,10 +4,10 @@ import FooterSection from '@/components/FooterSection.vue';
   <section id="hero">
     <h1>EnLit</h1>
     <p class="theme1">presents</p>
-    <h1 id="heading">Lit Fest</h1>
-    <p style="font-size: 1.16em;">
-      The first rule of <span class="theme2">Lit-Fest</span>, Don't talk about
-      <span class="theme2">Lit-Fest</span>
+    <h1 id="heading">Lit-Fest</h1>
+    <p>
+      "Embrace the <span class="theme2">mystic</span> world of 
+      <span class="theme2">literature.</span>
     </p>
 	<TimeBox />
   </section>
@@ -55,7 +55,8 @@ export default {
   font-size: 3rem;
 }
 #heading {
-  font-size: 9rem !important;
+  /* text-transform: uppercase; */
+  font-size: 8rem !important;
   animation: shimmer 3s linear 1 !important;
   font-weight: 800;
   line-height: 0.85em !important;
