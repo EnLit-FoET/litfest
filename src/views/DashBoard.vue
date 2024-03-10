@@ -1,32 +1,54 @@
 <template>
     <div class="container" :aria-busy="this.loading">
-        <h1>Dashboard</h1>
-        <div v-if="!loading">
-            <p v-if="this.user"> <img :src="this.user.photoURL" alt=""> Welcome {{user.displayName}}</p>
+        <div v-if="this.loading">
+            <p>Loading...</p>
         </div>
-        
+        <div v-else>
+            <RegisterForm v-if="!this.registered" />
+            <div v-else>
+                <h1>Dashboard</h1>
+                <p>Registered</p>
+                <p>Name: {{this.userData.name}}</p>
+                <p>College: {{this.userData.college}}</p>
+                <p>Year: {{this.userData.year}}</p>
+                <p>Phone: {{this.userData.phone}}</p>
+            </div>
+        </div>
     </div>
 </template>
 <script>
-import { getAuth, onAuthStateChanged } from "firebase/auth";
+import RegisterForm from '@/components/RegisterForm.vue';
+import { auth,db } from '@/utils';
+import { getDoc, collection, doc } from 'firebase/firestore';
 export default{
     name: "DashBoard",
     data(){
         return{
             user: null,
+            userData: null,
+            registered: false,
             loading: true
         }
     },
+    components: {
+        RegisterForm
+    },
     created(){
-        const auth = getAuth();
-        onAuthStateChanged(auth, (user) => {
+        let usersDb = collection(db, "users");
+        auth.onAuthStateChanged((user) => {
             if (!user) {
                 this.$router.push("/");
             }
             else{
                 this.user = user;
                 console.log(user)
-                this.loading = false;
+                getDoc(doc(usersDb, user.uid)).then((doc) => {
+                    if (doc.exists()) {
+                        this.registered = true;
+                        this.userData = doc.data();
+                    }
+                    this.loading = false;
+                });
             }
         });
     }

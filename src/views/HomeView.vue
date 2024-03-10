@@ -1,5 +1,3 @@
-
-import FooterSection from '@/components/FooterSection.vue';
 <template>
   <section id="hero">
     <h1>EnLit</h1>

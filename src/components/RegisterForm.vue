@@ -1,0 +1,67 @@
+<template>
+    <div class="container">
+        <h1>Register</h1>
+        <form @submit.prevent="registerUser">
+            <div>
+                <label for="email">Email address</label>
+                <input type="email" id="email" v-model="email" required>
+            </div>
+            <div>
+                <label for="name">Name</label>
+                <input type="text" id="name" v-model="name" required>
+            </div>
+            <div>
+                <label for="college">College</label>
+                <input type="text" id="college" v-model="college" required>
+            </div>
+            <div>
+                <label for="year">Year</label>
+                <input type="text" id="year" v-model="year" required>
+            </div>
+            <div>
+                <label for="phone">Phone</label>
+                <input type="text" id="phone" v-model="phone" required>
+            </div>
+            <button type="submit" class="btn">Register</button>
+        </form>
+    </div>
+</template>
+
+<script>
+    import { auth,db } from "@/utils"
+    import { collection, setDoc, doc } from "firebase/firestore";
+    export default{
+        data(){
+            return{
+                email: "",
+                name : "",
+                college : "",
+                year : "",
+                phone : ""
+            }
+        },
+        mounted(){
+            auth.onAuthStateChanged((user) => {
+                if (user) {
+                    this.email = user.email;
+                    this.name = user.displayName;
+                }
+            });
+        },
+        methods:{
+            async registerUser(){
+                let usersDb = collection(db, "users");
+                let user = auth.currentUser;
+                let userData = {
+                    email: this.email,
+                    name: this.name,
+                    college: this.college,
+                    year: this.year,
+                    phone: this.phone
+                }
+                await setDoc(doc(usersDb, user.uid), userData);
+                this.$router.push("/dashboard");
+            }
+        }
+    }
+</script>

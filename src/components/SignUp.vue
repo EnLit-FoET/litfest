@@ -8,13 +8,14 @@
 
 <script>
 import router from "@/router";
-import { getAuth, signInWithPopup, GoogleAuthProvider } from "firebase/auth";
+import { auth } from "@/utils";
+import { signInWithPopup, GoogleAuthProvider } from "firebase/auth";
 
 export default {
   methods: {
     handleGoogleLogin(){
       const provider = new GoogleAuthProvider();
-      signInWithPopup(getAuth(), provider).then((result)=>{
+      signInWithPopup(auth, provider).then((result)=>{
         console.log(result.user);
         router.push("/dashboard");
       }).catch((error) =>{
