@@ -15,6 +15,25 @@
             </div>
         </div>
     </div>
+
+    <nav style="justify-content: center">
+      <ul>
+        <li>
+          <a href="#" @click.prevent="showComponent('ProfileComp')">Profile</a>
+        </li>
+        <li>
+          <a href="#" @click.prevent="showComponent('RuleBook')">Rulebooks</a>
+        </li>
+        <li>
+          <a href="#" @click.prevent="showComponent('NoticeComp')">Notices</a>
+        </li>
+      </ul>
+    </nav>
+
+    <div>
+      <component :is="selectedComponent"></component>
+    </div>
+  </div>
 </template>
 <script>
 import RegisterForm from '@/components/RegisterForm.vue';

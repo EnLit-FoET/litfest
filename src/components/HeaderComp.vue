@@ -96,7 +96,7 @@ export default {
     onAuthStateChanged(auth, (user)=>{
       if(user){
         this.loggedIn = true;
-        this.dashboardOpen = true;
+        this.dashboardOpen = !this.dashboardOpen;
       }else{
         this.loggedIn = false;
       }
