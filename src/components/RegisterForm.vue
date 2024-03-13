@@ -59,8 +59,8 @@
                     year: this.year,
                     phone: this.phone
                 }
-                await setDoc(doc(usersDb, user.uid), userData);
-                this.$router.push("/dashboard");
+                await setDoc(doc(usersDb, user.email), userData);
+                window.reload()
             }
         }
     }

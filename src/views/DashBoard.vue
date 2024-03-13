@@ -4,7 +4,7 @@
             <p>Loading...</p>
         </div>
         <div v-else>
-            <RegisterForm v-if="!this.registered" />
+            <RegisterForm v-if="!this.registered"/>
             <div v-else>
                 <h1>Dashboard</h1>
                 <p>Registered</p>
@@ -41,8 +41,7 @@ export default{
             }
             else{
                 this.user = user;
-                console.log(user)
-                getDoc(doc(usersDb, user.uid)).then((doc) => {
+                getDoc(doc(usersDb, user.email)).then((doc) => {
                     if (doc.exists()) {
                         this.registered = true;
                         this.userData = doc.data();

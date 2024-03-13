@@ -37,7 +37,6 @@
   padding: 3% 0;
   font-size: 3.5rem;
   text-align: center;
-  color: #fff;
   background-color: #00000000;
 }
 
