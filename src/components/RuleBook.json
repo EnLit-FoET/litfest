@@ -1,0 +1,1477 @@
+{
+    "creativeFlair": {
+        "id": "creativeFlair",
+        "name": "Creative Flair (Est:50 min)",
+        "rule": [
+            {
+                "ruleName": "",
+                "overview": [
+                    {
+                        "des": "Weave a web with words to inspire wonder and awe. This is a competition for all the storytellers out there who like working with pen and paper. The participants have to write the narrative based on the prompts."
+                    }
+                ],
+                "participation": "Individual",
+                "participationNo": "",
+                "description": [
+                    {
+                        "roundNo": "",
+                        "rounds": [
+                            {
+                                "des": "The participants will be given a new word every 4 minutes which they will have to incorporate in their prose. Total of 4 words + 1 bonus word will be given."
+                            },
+                            {
+                                "des": "Not incorporating the 4 mandatory words in composition will lead to disqualification."
+                            },
+                            {
+                                "des": "Incorporating the bonus word will lead to bonus points being granted."
+                            }
+                        ]
+                    }
+                ],
+                "timeBreakdown": [
+                    {
+                        "des": "Introduction and Prompt Explanation (5 minutes)"
+                    },
+                    {
+                        "des": "Brainstorming and Planning (7 minutes)"
+                    },
+                    {
+                        "des": "Writing Time (20 minutes)"
+                    },
+                    {
+                        "des": "Submission and Closing (3 minutes)"
+                    }
+                ],
+                "judgingCriteria": [
+                    {
+                        "des": "Entries must be an original piece of work- plagiarism of any sort if detected will result in immediate disqualification."
+                    }
+                ],
+                "notes": [
+                    {
+                        "des": "Jury decisions are final and binding."
+                    },
+                    {
+                        "des": "There will be a knock-out round in case of tie."
+                    },
+                    {
+                        "des": "The organizing team reserves the right to change or modify the rules."
+                    }
+                ]
+            }
+        ],
+        "participationFee": 50
+    },
+    "kissa": {
+        "id": "kissa",
+        "name": "Kissa(Est: 2hrs)",
+        "rule": [
+            {
+                "ruleName": "",
+                "overview": [
+                    {
+                        "des": "Weave a web with words to inspire wonder and awe. This is a competition for all the storytellers out there who like working with pen and paper. The participants have to write the narrative based on the prompts."
+                    }
+                ],
+                "participation": "Team",
+                "participationNo": "Total no. of team members: 2",
+                "description": [
+                    {
+                        "roundNo": "Part 1 :-",
+                        "rounds": [
+                            {
+                                "des": "TParticipants can write a story on any suitable topic of their choice."
+                            },
+                            {
+                                "des": "The entries will be short stories with a word limit of approximately 1500 (±100) words."
+                            },
+                            {
+                                "des": "One of the members of the team will start writing a narrative."
+                            },
+                            {
+                                "des": "After 20 minutes the member writing the narrative will pass the prose to the other team member and then the person will complete the piece for the next 25 minutes."
+                            },
+                            {
+                                "des": "Participants will NOT be allowed to discuss the idea of their respective prose with each other during the entire course of the round."
+                            }
+                        ]
+                    },
+                    {
+                        "roundNo": "Part 2:-",
+                        "rounds": [
+                            {
+                                "des": "You will have to read your story on the stage."
+                            },
+                            {
+                                "des": "The time limit for reading is 5 minutes. If the time limit is exceeded, a penalty of 5% of the points per minute will be deducted, and after 7 minutes, every subsequent minute will result in a deduction of 20% of the points."
+                            },
+                            {
+                                "des": "Participants are advised to use modulation in their voices and express emotions to make their recitation more impactful."
+                            }
+                        ]
+                    }
+                ],
+                "timeBreakdown": [],
+                "judgingCriteria": [
+                    {
+                        "des": "Entries must be an original piece of work - plagiarism of any sort if detected will result in immediate disqualification."
+                    },
+                    {
+                        "des": "Word Pronunciation (20)"
+                    },
+                    {
+                        "des": "Plot (40)"
+                    },
+                    {
+                        "des": "Voice Modulation (40)"
+                    },
+                    {
+                        "des": "Penalty (-5, Binary)"
+                    }
+                ],
+                "notes": [
+                    {
+                        "des": "Jury decisions are final and binding."
+                    },
+                    {
+                        "des": "There will be a knock-out round in case of tie."
+                    },
+                    {
+                        "des": "The organizing team reserves the right to change or modify the rules."
+                    }
+                ]
+            }
+        ],
+        "participationFee": 100
+    },
+    "debate": {
+        "id": "clashOfOpinions",
+        "name": "Clash Of Opinion(Est: 2hrs ):-",
+        "rule": [
+            {
+                "ruleName": "English:-",
+                "overview": [
+                    {
+                        "des": "Participants are allowed to speak only in English."
+                    },
+                    {
+                        "des": "Two teams will be competing against each other wherein each team will consist of two members."
+                    },
+                    {
+                        "des": "One team will speak for the motion and the other one will speak against the motion."
+                    },
+                    {
+                        "des": "The format of the debate is as follows:"
+                    }
+                ],
+                "participation": "Team",
+                "participationNo": "Two Members",
+                "description": [
+                    {
+                        "roundNo": "Introduction:",
+                        "rounds": [
+                            {
+                                "des": "Participants are to give a brief introduction of the topic. State the position they are defending and have to provide a brief overview of the main arguments they will be presenting."
+                            },
+                            {
+                                "des": "Time: 2 minutes"
+                            }
+                        ]
+                    },
+                    {
+                        "roundNo": "Main Argument:",
+                        "rounds": [
+                            {
+                                "des": "Present your strongest argument in support of your position along with supporting evidence and examples to back up your argument."
+                            },
+                            {
+                                "des": "Time: 2 minutes"
+                            }
+                        ]
+                    },
+                    {
+                        "roundNo": "Rebuttal:",
+                        "rounds": [
+                            {
+                                "des": "Respond to the counter-argument presented by the opposition."
+                            },
+                            {
+                                "des": "Point out flaws and weaknesses in their argument"
+                            },
+                            {
+                                "des": "Provide evidence and examples to support your rebuttal"
+                            },
+                            {
+                                "des": "Time: 3 minutes"
+                            }
+                        ]
+                    },
+                    {
+                        "roundNo": "Bonus Round (Audience Questions):",
+                        "rounds": [
+                            {
+                                "des": "A bonus round for each debate will consist of audience cross questioning and judges cross questioning."
+                            },
+                            {
+                                "des": "Answering those questions within the allotted time limit (1 minute) will lead to bonus points."
+                            }
+                        ]
+                    }
+                ],
+                "timeBreakdown": [],
+                "judgingCriteria": [],
+                "notes": [
+                    {
+                        "des": "Participants will not be allowed to take any paper or material with them during the debate."
+                    },
+                    {
+                        "des": "Individuals will be grouped together in teams by the organizing team."
+                    },
+                    {
+                        "des": "Use of foul language will lead to disqualification."
+                    },
+                    {
+                        "des": "Participants should strictly avoid targeting any person/belief/religion discourteously."
+                    },
+                    {
+                        "des": "The timer will be set by the host and the decision of the judges would be considered final."
+                    },
+                    {
+                        "des": "In case of a tie, the winner will be decided by the panel of judges by mutual decision."
+                    },
+                    {
+                        "des": "Negative marking will be done if the team takes extra time."
+                    }
+                ]
+            },
+            {
+                "ruleName": "Hindi:-",
+                "overview": [
+                    {
+                        "des": "प्रतिभागियों को केवल हिन्दी में बोलने की अनुमति है।"
+                    },
+                    {
+                        "des": "दो टीमें एक-दूसरे के खिलाफ प्रतिस्पर्धा करेंगी, जिसमें प्रत्येक टीम में दो सदस्य होंगे।"
+                    },
+                    {
+                        "des": "एक दल प्रस्ताव के पक्ष में बोलेगा और दूसरा दल प्रस्ताव के विरुद्ध बोलेगा।"
+                    },
+                    {
+                        "des": "वाद-विवाद का प्रारूप इस प्रकार है:"
+                    }
+                ],
+                "participation": "एकल व्यक्ति",
+                "participationNo": "",
+                "description": [
+                    {
+                        "roundNo": "परिचय:",
+                        "rounds": [
+                            {
+                                "des": "प्रतिभागियों को विषय का संक्षिप्त परिचय देना है। वे जिस स्थिति का बचाव कर रहे हैं उसे बताएं और उनके द्वारा प्रस्तुत किए जाने वाले मुख्य तर्कों का संक्षिप्त विवरण प्रदान करना होगा।"
+                            },
+                            {
+                                "des": "समय : 2 मिनट"
+                            }
+                        ]
+                    },
+                    {
+                        "roundNo": "मुख्य तर्क:",
+                        "rounds": [
+                            {
+                                "des": "अपने तर्क का समर्थन करने के लिए सहायक साक्ष्य और उदाहरणों के साथ अपनी स्थिति के समर्थन में अपना सबसे मजबूत तर्क प्रस्तुत करें।"
+                            },
+                            {
+                                "des": "समय : 2 मिनट"
+                            }
+                        ]
+                    },
+                    {
+                        "roundNo": "खंडन :",
+                        "rounds": [
+                            {
+                                "des": "विपक्ष द्वारा पेश किए गए प्रतिवाद का जवाब दें।"
+                            },
+                            {
+                                "des": "उनके तर्क में कमियों और कमजोरियों को इंगित करें"
+                            },
+                            {
+                                "des": "अपने खंडन का समर्थन करने के लिए साक्ष्य और उदाहरण प्रदान करें"
+                            },
+                            {
+                                "des": "समय: 3 मिनट"
+                            }
+                        ]
+                    },
+                    {
+                        "roundNo": "बोनस राउंड (दर्शकों के प्रश्न):",
+                        "rounds": [
+                            {
+                                "des": "प्रत्येक बहस के लिए एक बोनस राउंड में दर्शकों के प्रश्न और जजों के प्रश्न शामिल होंगे।"
+                            },
+                            {
+                                "des": "आवंटित समय सीमा (1 मिनट) के भीतर उन प्रश्नों का उत्तर देने पर बोनस अंक मिलेंगे।"
+                            }
+                        ]
+                    }
+                ],
+                "timeBreakdown": [],
+                "judgingCriteria": [],
+                "notes": [
+                    {
+                        "des": "वाद-विवाद के दौरान प्रतिभागियों को अपने साथ कोई कागज या सामग्री ले जाने की अनुमति नहीं होगी।"
+                    },
+                    {
+                        "des": "अभद्र भाषा का प्रयोग अयोग्यता का कारण बनेगा।"
+                    },
+                    {
+                        "des": "व्यक्तियों को संगठन द्वारा टीमों में विभाजित किया जाएगा।"
+                    },
+                    {
+                        "des": "प्रतिभागियों को सख्ती से किसी भी व्यक्ति/विश्वास/धर्म को निशाना बनाने से बचना चाहिए।"
+                    },
+                    {
+                        "des": "मॉडरेटर द्वारा टाइमर सेट किया जाएगा और निर्णायकों का निर्णय अंतिम माना जाएगा।"
+                    },
+                    {
+                        "des": "एक टाई के मामले में, विजेता का फैसला न्यायाधीशों के पैनल द्वारा आपसी निर्णय से किया जाएगा।"
+                    }
+                ]
+            }
+        ],
+        "participationFee": 200
+    },
+    "oration": {
+        "id": "oration",
+        "name": "Oration(Est: 1hr 40min)",
+        "rule": [
+            {
+                "ruleName": "",
+                "overview": [
+                    {
+                        "des": " An extempore speech, often referred to as impromptu speaking, is a form of public address where the speaker is given a topic on the spot and is expected to deliver a coherent and engaging speech without prior preparation. The primary goal is to test the speaker's ability to think quickly, organize thoughts on the fly, and communicate effectively."
+                    }
+                ],
+                "participation": "Individual",
+                "participationNo": "",
+                "description": [
+                    {
+                        "roundNo": "Round 1: (50%)",
+                        "rounds": [
+                            {
+                                "des": "Participants allotted 30 seconds for contemplation after topic reveal."
+                            },
+                            {
+                                "des": "Speech starts after contemplation; a warning issued 2 minutes into the speech."
+                            },
+                            {
+                                "des": "Within the next 20 seconds, participants must conclude their speech."
+                            },
+                            {
+                                "des": "Points deducted for every 10 seconds exceeded, at a rate of 15% per deduction."
+                            }
+                        ]
+                    },
+                    {
+                        "roundNo": "Round 2: (50%)",
+                        "rounds": [
+                            {
+                                "des": "Top 5 participants from Round 1 progress to Round 2."
+                            },
+                            {
+                                "des": "First topic: 30 seconds for contemplation, 3 minutes for speech and conclusion."
+                            },
+                            {
+                                "des": "After 75 seconds, a second topic is given for seamless transition."
+                            },
+                            {
+                                "des": "Points deducted for exceeding 15 seconds, at a rate of 15% per deduction."
+                            },
+                            {
+                                "des": "Winners are announced based on total points from all three stages."
+                            }
+                        ]
+                    }
+                ],
+                "timeBreakdown": [],
+                "judgingCriteria": [],
+                "notes": [
+                    {
+                        "des": "Participants must articulate precise thoughts on assigned topics."
+                    },
+                    {
+                        "des": "Deviation from the given topic may lead to point deductions, decided by the jury."
+                    },
+                    {
+                        "des": "Additional rules and guidelines will be explained during the competition."
+                    },
+                    {
+                        "des": "Jury decisions are final and binding."
+                    },
+                    {
+                        "des": "The organizing team retains the right to modify or amend the rules."
+                    }
+                ]
+            }
+        ],
+        "participationFee": 100
+    },
+    "nazm": {
+        "id": "nazm",
+        "name": "Nazm(Est: 1hr):-",
+        "rule": [
+            {
+                "ruleName": "",
+                "overview": [
+                    {
+                        "des": "Weave the magic of words into poetic expressions that stir hearts. This competition is tailor-made for poets who wield pens as their artistic instruments. Participants are challenged to craft their best Shayari."
+                    }
+                ],
+                "participation": "Individual",
+                "participationNo": "",
+                "description": [
+                    {
+                        "roundNo": "",
+                        "rounds": [
+                            {
+                                "des": "Performances must be an original piece of work; any plagiarism will lead to immediate disqualification."
+                            },
+                            {
+                                "des": "There should not be any use of written material."
+                            },
+                            {
+                                "des": "Time limit for each participant will be 3 minutes, ensuring fairness and adherence to the schedule."
+                            },
+                            {
+                                "des": "The language(s) allowed for Shayari recitation are Urdu or Hindi."
+                            }
+                        ]
+                    }
+                ],
+                "timeBreakdown": [],
+                "judgingCriteria": [
+                    {
+                        "des": "Creativity (20%)"
+                    },
+                    {
+                        "des": "Expression (30%)"
+                    },
+                    {
+                        "des": "Delivery (30%)"
+                    },
+                    {
+                        "des": "Vocabulary (20%)"
+                    }
+                ],
+                "notes": [
+                    {
+                        "des": "Jury decisions are final and binding."
+                    },
+                    {
+                        "des": "The organizing team reserves the right to change or modify the rules as necessary."
+                    }
+                ]
+            }
+        ],
+        "participationFee": 150
+    },
+    "rythmicRivals": {
+        "id": "rythmicRivals",
+        "name": "Rhythmic Rivals(Est: 1hr 30min):-",
+        "rule": [
+            {
+                "ruleName": "English :-",
+                "overview": [
+                    {
+                        "des": "Capturing the audience's imagination goes beyond mere words; it's about the artful utilization of your writing. For budding poets, here's your chance to delve into the competitive world of performance poetry. Participants are challenged to craft and recite their best work based on the given prompt."
+                    }
+                ],
+                "participation": "Individual",
+                "participationNo": "",
+                "description": [
+                    {
+                        "roundNo": "",
+                        "rounds": [
+                            {
+                                "des": "Styles of poetry accepted: Ode, Free verse and Ballad."
+                            },
+                            {
+                                "des": "Poem must be an original piece of work - plagiarism of any sort if detected will result in immediate disqualification."
+                            },
+                            {
+                                "des": "Time limit: 5 minutes."
+                            }
+                        ]
+                    }
+                ],
+                "timeBreakdown": [],
+                "judgingCriteria": [
+                    {
+                        "des": "Creativity (10%)"
+                    },
+                    {
+                        "des": "Expression (20%)"
+                    },
+                    {
+                        "des": "Delivery (30%)"
+                    },
+                    {
+                        "des": "Vocabulary (10%)"
+                    },
+                    {
+                        "des": "Prompt Consistency (30%)"
+                    }
+                ],
+                "notes": [
+                    {
+                        "des": "Jury decisions are final and binding."
+                    },
+                    {
+                        "des": "The organizing team reserves the right to change or modify the rules as necessary."
+                    }
+                ]
+            },
+            {
+                "ruleName": "Hindi :-",
+                "overview": [],
+                "participation": "Individual",
+                "participationNo": "",
+                "description": [
+                    {
+                        "roundNo": "",
+                        "rounds": [
+                            {
+                                "des": "कविता पूरी तरह से हिंदी में ही रची जानी चाहिए।"
+                            },
+                            {
+                                "des": "कविता में उदार भाषा का सीमित प्रयोग मान्य होगा, लेकिन न्यायाधीश किसी भी गैर-हिंदी भाषा के प्रयोग के लिए अपने विवेक से अंक काट सकते हैं।"
+                            },
+                            {
+                                "des": "कविता प्रतिभागी की स्वयं की रचना होनी चाहिए। किसी भी प्रकार की साहित्यिक चोरी पायी जाने पर प्रतियोगी को अयोग्य घोषित किया जायेगा।"
+                            },
+                            {
+                                "des": "समय सीमा: 5 मिनट"
+                            }
+                        ]
+                    }
+                ],
+                "timeBreakdown": [],
+                "judgingCriteria": [
+                    {
+                        "des": "रचनात्मकता  (20%)"
+                    },
+                    {
+                        "des": "कल्पना  (20%)"
+                    },
+                    {
+                        "des": "प्रस्तुति  (40%)"
+                    },
+                    {
+                        "des": "शब्दावली  (20%)"
+                    },
+                    {
+                        "des": "Prompt Consistency (30%)"
+                    }
+                ],
+                "notes": [
+                    {
+                        "des": "निर्णायकों का निर्णय अंतिम और सर्वमान्य होगा |"
+                    },
+                    {
+                        "des": "आयोजक टीम नियमों को बदलने या संशोधित करने का अधिकार रखती है।"
+                    }
+                ]
+            }
+        ],
+        "participationFee": 100
+    },
+    "memeLit": {
+        "id": "memeLit",
+        "name": "Meme Lit:-",
+        "rule": [
+            {
+                "ruleName": "",
+                "overview": [
+                    {
+                        "des": "Participants utilize their creativity, wit, and understanding of culture to craft engaging and humorous memes. Diamonds in the rough, it is your turn to show off your hidden talent."
+                    }
+                ],
+                "participation": "Individual",
+                "participationNo": "",
+                "description": [
+                    {
+                        "roundNo": "",
+                        "rounds": [
+                            {
+                                "des": "Overused templates are not allowed."
+                            },
+                            {
+                                "des": "The memes should not be insensitive, threatening or harassing memes. Or contain any NSFW(Not Safe For Work)."
+                            },
+                            {
+                                "des": "Any form of discrimination will result in disqualification."
+                            },
+                            {
+                                "des": "No reposting memes, they should be original."
+                            },
+                            {
+                                "des": "Lazy memes (screenshots, with jokes in the titles) are prohibited."
+                            },
+                            {
+                                "des": "Poorly edited memes are not permitted."
+                            },
+                            {
+                                "des": "Low effort stereotypical memes are prohibited."
+                            },
+                            {
+                                "des": "Memes should not be hateful towards any religion, or community."
+                            },
+                            {
+                                "des": "The memes will be submitted through the Website: {Insert link here}."
+                            }
+                        ]
+                    }
+                ],
+                "timeBreakdown": [],
+                "judgingCriteria": [
+                    {
+                        "des": "Creativity (10%)"
+                    },
+                    {
+                        "des": "Editing (30%)"
+                    },
+                    {
+                        "des": "Originality (20%)"
+                    },
+                    {
+                        "des": "Humour (30%)"
+                    }
+                ],
+                "notes": []
+            }
+        ],
+        "participationFee": 50
+    },
+    "palletProwess": {
+        "id": "palletProwess",
+        "name": "Palette Prowess(Est: 2 hrs) :-",
+        "rule": [
+            {
+                "ruleName": "",
+                "overview": [
+                    {
+                        "des": "In the Poster Making Competition, participants channel their creativity to visually communicate a provided theme through compelling artworks, combining artistry and effective messaging on a poster."
+                    }
+                ],
+                "participation": "Individual",
+                "participationNo": "",
+                "description": [
+                    {
+                        "roundNo": "",
+                        "rounds": [
+                            {
+                                "des": "Participants should bring their own colors as per their requirements."
+                            },
+                            {
+                                "des": "We will provide them with a canvas of size 30cm x 40cm."
+                            },
+                            {
+                                "des": "Theme will be provided on spot."
+                            },
+                            {
+                                "des": "The time limit to think of an idea and create a poster is 2 hours."
+                            }
+                        ]
+                    }
+                ],
+                "timeBreakdown": [],
+                "judgingCriteria": [
+                    {
+                        "des": "Originality (20%)"
+                    },
+                    {
+                        "des": "Painting Skills (30%)"
+                    },
+                    {
+                        "des": "Creativity (20%)"
+                    },
+                    {
+                        "des": "Description (15%)"
+                    },
+                    {
+                        "des": "Neatness (15%)"
+                    }
+                ],
+                "notes": [
+                    {
+                        "des": "Jury decisions are final and binding."
+                    },
+                    {
+                        "des": "The organizing team reserves the right to change or modify the rules."
+                    },
+                    {
+                        "des": "In the case of conflicts, the decision of the judges would be considered final and the scoresheet of each judge will be provided to participating teams."
+                    }
+                ]
+            }
+        ],
+        "participationFee": 100
+    },
+    "PixelQuill": {
+        "id": "PixelQuill",
+        "name": "PixelQuill(Est: 20min) :-",
+        "rule": [
+            {
+                "ruleName": "",
+                "overview": [
+                    {
+                        "des": "The calligraphy competition aims to celebrate and showcase the artistry of beautiful writing. Participants will demonstrate their skills in creating visually appealing and well-executed pieces of calligraphy."
+                    }
+                ],
+                "participation": "Individual",
+                "participationNo": "",
+                "description": [
+                    {
+                        "roundNo": "",
+                        "rounds": [
+                            {
+                                "des": "Participants need to bring their own tools (ink, pens and brushes) for the competition."
+                            },
+                            {
+                                "des": "Plagiarism is strictly prohibited."
+                            },
+                            {
+                                "des": "The time limit for creating calligraphy is 15 min."
+                            },
+                            {
+                                "des": "Calligraphy sheets will be provided by the organizing team."
+                            },
+                            {
+                                "des": "Participants will lose points if they opt for a second sheet to start afresh."
+                            },
+                            {
+                                "des": "Points will be deducted for overwriting."
+                            }
+                        ]
+                    }
+                ],
+                "timeBreakdown": [],
+                "judgingCriteria": [
+                    {
+                        "des": "Skill and Technique (30%)"
+                    },
+                    {
+                        "des": "Aesthetics (20%)"
+                    },
+                    {
+                        "des": "Originality (20%)"
+                    },
+                    {
+                        "des": "Creativity (30%)"
+                    }
+                ],
+                "notes": [
+                    {
+                        "des": "Jury decisions are final and binding."
+                    },
+                    {
+                        "des": "Organizers may modify rules if needed."
+                    },
+                    {
+                        "des": "Bring your own calligraphy tools."
+                    },
+                    {
+                        "des": "Competition aims to inspire creativity in written expression."
+                    }
+                ]
+            }
+        ],
+        "participationFee": 100
+    },
+    "CreaseCrisp": {
+        "id": "CreaseCrisp",
+        "name": "Crease Crisp(Est: 60 min) :-",
+        "rule": [
+            {
+                "ruleName": "",
+                "overview": [
+                    {
+                        "des": "Origami Making Competition celebrates the art of paper folding, where participants showcase creativity and precision by transforming simple sheets into intricate designs. This event highlights the beauty of origami, inviting participants of all skill levels to showcase their unique creations."
+                    }
+                ],
+                "participation": "Individual",
+                "participationNo": "",
+                "description": [
+                    {
+                        "roundNo": "",
+                        "rounds": [
+                            {
+                                "des": "Origami sheets will be provided at the time of the competition."
+                            },
+                            {
+                                "des": "Each team will make a 2D/3D craftwork within the time limit provided."
+                            },
+                            {
+                                "des": "Theme is open, but you need to write a short note explaining your creation."
+                            },
+                            {
+                                "des": "Time Limit: 60 minutes."
+                            }
+                        ]
+                    }
+                ],
+                "timeBreakdown": [],
+                "judgingCriteria": [
+                    {
+                        "des": "Originality - 20%"
+                    },
+                    {
+                        "des": "Origami Skills - 30%"
+                    },
+                    {
+                        "des": "Creativity - 20%"
+                    },
+                    {
+                        "des": "Appearance, Neatness - 20%"
+                    },
+                    {
+                        "des": "Description - 10%"
+                    }
+                ],
+                "notes": [
+                    {
+                        "des": "This will be an Open Theme Competition."
+                    },
+                    {
+                        "des": "Jury decisions are final and binding."
+                    },
+                    {
+                        "des": "The organizing team reserves the right to change or modify the rules."
+                    }
+                ]
+            }
+        ],
+        "participationFee": 100
+    },
+    "DictionSnap": {
+        "id": "DictionSnap",
+        "name": "Diction Snap(Est: 60 min) :-",
+        "rule": [
+            {
+                "ruleName": "",
+                "overview": [
+                    {
+                        "des": "A spelling bee represents a venerable tradition wherein individuals showcase their linguistic prowess by audibly deciphering and articulating words presented. As the contest unfolds, the lexicon's complexity ascends, testing the competitors' acumen and perspicacity."
+                    }
+                ],
+                "participation": "Individual",
+                "participationNo": "",
+                "description": [
+                    {
+                        "roundNo": "Rules for round 1:",
+                        "rounds": [
+                            {
+                                "des": "Round one AKA knockout round will be held in written format."
+                            },
+                            {
+                                "des": "The moderator will pronounce the word and its meaning, and the participant must write the word letter by letter, in the correct sequence within the given time limit(30 seconds per word)."
+                            },
+                            {
+                                "des": "Words to be written in the first round: 10."
+                            },
+                            {
+                                "des": "A Dash sheet will be provided by the organizing team. Any overwriting or cutting will result in point deduction."
+                            },
+                            {
+                                "des": "Top scorers will be promoted to round 2 AKA final round."
+                            }
+                        ]
+                    },
+                    {
+                        "roundNo": "Rules for round 2:",
+                        "rounds": [
+                            {
+                                "des": "The moderator will pronounce the word and its meaning, and the participant must spell the word aloud, letter by letter, in the correct sequence."
+                            },
+                            {
+                                "des": "Each letter must be accurately pronounced and spelled. If a letter is incorrect, the participant will be given one opportunity to correct it."
+                            },
+                            {
+                                "des": "Contestants will have a limited amount of time(30 seconds) to spell the word."
+                            },
+                            {
+                                "des": "A contestant is eliminated from the competition if they misspell a word. In some competitions, there may be a double elimination system where a contestant is given a second chance after one incorrect spelling."
+                            },
+                            {
+                                "des": "Words to be spelled in the final round: 10"
+                            }
+                        ]
+                    }
+                ],
+                "timeBreakdown": [],
+                "judgingCriteria": [],
+                "notes": [
+                    {
+                        "des": "Organizers reserve the right to modify rules for fairness."
+                    },
+                    {
+                        "des": "Jury decisions are final and binding."
+                    }
+                ]
+            }
+        ],
+        "participationFee": 100
+    },
+    "STANDUP": {
+        "id": "STANDUP",
+        "name": "STANDUP(Est:1hr 30mins) :-",
+        "rule": [
+            {
+                "ruleName": "",
+                "overview": [
+                    {
+                        "des": "A live performance where comedians entertain audiences with witty anecdotes, jokes, and observations, typically without props or costumes. It's all about laughter, direct interaction, and the comedian's unique style. Comedians are allowed to be expressive and creative to show off their unique sense of humor."
+                    }
+                ],
+                "participation": "Individual",
+                "participationNo": "",
+                "description": [
+                    {
+                        "roundNo": "",
+                        "rounds": [
+                            {
+                                "des": "The primary rule of stand-up comedy is to make the audience laugh. Comedy can cover a wide range of topics, but the ultimate goal is to entertain."
+                            },
+                            {
+                                "des": "Strive to develop unique material that reflects your own experiences, perspectives, and style. Avoid copying or plagiarizing other comedians' work."
+                            },
+                            {
+                                "des": "Avoid offensive or derogatory material that may alienate or upset your audience. Comedy should entertain without causing harm."
+                            },
+                            {
+                                "des": "8 Mins time limit per participant"
+                            }
+                        ]
+                    }
+                ],
+                "timeBreakdown": [],
+                "judgingCriteria": [
+                    {
+                        "des": "Originality (20%)"
+                    },
+                    {
+                        "des": "Delivery (20%)"
+                    },
+                    {
+                        "des": "Timing (10%)"
+                    },
+                    {
+                        "des": "Audience Reaction (50%)"
+                    }
+                ],
+                "notes": [
+                    {
+                        "des": "Organizers reserve the right to modify rules for fairness."
+                    },
+                    {
+                        "des": "Jury decisions are final and binding."
+                    }
+                ]
+            }
+        ],
+        "participationFee": 200
+    },
+    "aurFIR": {
+        "id": "aurFIR",
+        "name": "Aur Fir (est 1hr 30mins) :-",
+        "rule": [
+            {
+                "ruleName": "",
+                "overview": [
+                    {
+                        "des": "Storytelling is the art of narrating a captivating tale using words, gestures, and expressions to entertain, educate, or inspire an audience. Through characters, settings, and events, storytellers create vivid experiences, transcending cultures and mediums, connecting people through the power of narrative."
+                    }
+                ],
+                "participation": "Individual",
+                "participationNo": "",
+                "description": [
+                    {
+                        "roundNo": "",
+                        "rounds": [
+                            {
+                                "des": "Participants share full stories based on predetermined themes or prompts."
+                            },
+                            {
+                                "des": "Violation of content guidelines or inappropriate behavior will result in disqualification."
+                            },
+                            {
+                                "des": "Avoid offensive or derogatory material that may alienate or upset your audience."
+                            },
+                            {
+                                "des": "Emphasis on vocal delivery, expression, and engagement with the audience."
+                            },
+                            {
+                                "des": "The competition will consist of one round only."
+                            }
+                        ]
+                    }
+                ],
+                "timeBreakdown": [
+                    {
+                        "des": "Character introduction: 2 Mins"
+                    },
+                    {
+                        "des": "Backstory: 2 Mins"
+                    },
+                    {
+                        "des": "Main plot: 4 Mins"
+                    },
+                    {
+                        "des": "Conclusion: 2 Mins"
+                    },
+                    {
+                        "des": "Max time limit: 10 mins"
+                    }
+                ],
+                "judgingCriteria": [
+                    {
+                        "des": "Originality and creativity of the story."
+                    },
+                    {
+                        "des": "Presentation skills, including voice modulation and engagement."
+                    }
+                ],
+                "notes": [
+                    {
+                        "des": "Respect for fellow participants and the audience is expected throughout the competition."
+                    },
+                    {
+                        "des": "Organizers reserve the right to modify rules for fairness."
+                    },
+                    {
+                        "des": "Jury decisions are final and binding."
+                    }
+                ]
+            }
+        ],
+        "participationFee": 200
+    },
+    "StellarQuizzes": {
+        "id": "StellarQuizzes",
+        "name": "Stellar Quizzes :-",
+        "rule": [
+            {
+                "ruleName": "",
+                "overview": [
+                    {
+                        "des": "An intriguing and immersive theme quiz designed to take you on an epic journey through the realms of Marvel, Ben 10, Anime, Transformers, and Hindu Epics. Unleash your inner geek, test your knowledge, and explore the diverse universes that these themes offer."
+                    }
+                ],
+                "participation": "Team",
+                "participationNo": "2 member per team",
+                "description": [
+                    {
+                        "roundNo": "Initial round:",
+                        "rounds": [
+                            {
+                                "des": "The initial round will involve a pen-and-paper round."
+                            },
+                            {
+                                "des": "Our quiz master will present a total of 20 questions, with 10 being multiple-choice questions (MCQs) and the remaining 10 being presented without options."
+                            },
+                            {
+                                "des": "You have one minute per question. Once the time limit is reached, the quiz master will proceed to the next question."
+                            },
+                            {
+                                "des": "The top four teams will be selected and advanced to the final round."
+                            }
+                        ]
+                    },
+                    {
+                        "roundNo": "Final round:",
+                        "rounds": [
+                            {
+                                "des": "The final round will be a buzzer round."
+                            },
+                            {
+                                "des": "The quiz master poses a question to competing teams, who must press the buzzer within a 30-second window to respond."
+                            }
+                        ]
+                    }
+                ],
+                "timeBreakdown": [],
+                "judgingCriteria": [],
+                "notes": []
+            }
+        ],
+        "participationFee": "200 per team"
+    },
+    "NukkadNatak": {
+        "id": "NukkadNatak",
+        "name": "NUKKAD NATAK(Est: 2 hr 30 min) :-",
+        "rule": [
+            {
+                "ruleName": "",
+                "overview": [
+                    {
+                        "des": "Drama lies in extreme exaggeration of the feelings, an exaggeration that dislocates flat everyday reality. This Lit-Fiesta will unveil a commitment to the art of theater, to the cultural fabric of the audience, bringing to them a wholesome feast of drama to awaken and thrill the senses. So gather the troupe, watch and perform ingeniously written scripts, transforming them into mesmerizing plays, sparred up with the dexterity and forte of actors guided by adept direction."
+                    }
+                ],
+                "participation": "Team",
+                "participationNo": "",
+                "description": [
+                    {
+                        "roundNo": ":",
+                        "rounds": [
+                            {
+                                "des": "Participants will have to submit a pdf file containing the following things in advance: Name of College, List of Participants, Script."
+                            },
+                            {
+                                "des": "Play could be in English, Hindi or Bi-lingual, or a Musical Drama."
+                            },
+                            {
+                                "des": "Use of flammable substances such as candles, matches or cigarettes or any alcoholic product during performance on stage is not allowed and will result in disqualification."
+                            },
+                            {
+                                "des": "Two teams from the same college can participate but the entries should be in different languages."
+                            },
+                            {
+                                "des": "One team can have a maximum of 15 Actors."
+                            },
+                            {
+                                "des": "The competition will consist of one round only."
+                            },
+                            {
+                                "des": "The performance must be original."
+                            },
+                            {
+                                "des": "Inappropriate content, religious blasphemy and vulgarity/obscenity will NOT be tolerated."
+                            },
+                            {
+                                "des": "The play must be completed within a 15-minute timeframe."
+                            }
+                        ]
+                    }
+                ],
+                "timeBreakdown": [],
+                "judgingCriteria": [
+                    {
+                        "des": "Acting(30%)"
+                    },
+                    {
+                        "des": "Depiction of characters(10%)"
+                    },
+                    {
+                        "des": "Voice clarity and energy level(20%)"
+                    },
+                    {
+                        "des": "Direction(10%)"
+                    },
+                    {
+                        "des": "Stage production(15%)"
+                    },
+                    {
+                        "des": "Use of props(15%)"
+                    }
+                ],
+                "notes": [
+                    {
+                        "des": "Jury decisions are final and binding."
+                    },
+                    {
+                        "des": "The organizing team reserves the right to change or modify the rules."
+                    },
+                    {
+                        "des": "Not adhering to the time limit will result in negative marking. (5% penalty for every extra minute)"
+                    }
+                ]
+            }
+        ],
+        "participationFee": "500 per team"
+    },
+    "Theatre": {
+        "id": "Theatre",
+        "name": "THEATRE (Est. 5 hrs) :-",
+        "rule": [
+            {
+                "ruleName": "",
+                "overview": [
+                    {
+                        "des": "'Drama lies in extreme exaggeration of the feelings, an exaggeration that dislocates flat everyday reality.' This event will unveil a commitment to the art of theater, to the cultural fabric of the audience, bringing to them a wholesome feast of drama to awaken and thrill the senses. So gather the troupe, watch and perform ingeniously written scripts, transforming them into mesmerizing plays, sparred up with the dexterity and forte of actors guided by adept direction."
+                    }
+                ],
+                "participation": "Team",
+                "participationNo": "",
+                "description": [
+                    {
+                        "roundNo": ":",
+                        "rounds": [
+                            {
+                                "des": "Participants will have to submit a pdf file containing the following things in advance: Name of College, List of Participants, Script."
+                            },
+                            {
+                                "des": "Play could be in English, Hindi or Bi-lingual, or a Musical Drama."
+                            },
+                            {
+                                "des": "Use of flammable substances such as candles, matches or cigarettes or any alcoholic product during performance on stage is not allowed and will result in disqualification."
+                            },
+                            {
+                                "des": "Two teams from the same college can participate but the entries should be in different languages."
+                            },
+                            {
+                                "des": "One team can have a maximum of 15 Actors."
+                            },
+                            {
+                                "des": "The competition will consist of one round only."
+                            },
+                            {
+                                "des": "A team can have five backstage/props managers, one light in charge, one sound in-charge and a round-up artist (if any they have to be registered)."
+                            },
+                            {
+                                "des": "The performance can be an original or an adaptation. There are no constraints regarding that. Inappropriate content, religious blasphemy and vulgarity/obscenity will NOT be tolerated."
+                            },
+                            {
+                                "des": "The play must be completed within a 50-minute time frame."
+                            }
+                        ]
+                    }
+                ],
+                "timeBreakdown": [
+                    {
+                        "des": "Introduction (5 minutes): - Welcome the audience. - Briefly introduce the theme or context of the play, - Set the tone for the performance."
+                    },
+                    {
+                        "des": "Act 1 (15 minutes): - Establish the main characters and the initial situation. - Introduce the central conflict or challenge. - Develop the plot and engage the audience."
+                    },
+                    {
+                        "des": "Intermission (2 minutes): - Set up any changes in the stage or props if necessary."
+                    },
+                    {
+                        "des": "Act 2 (20 minutes): - Continue the development of the story and characters, - Intensify the conflict or introduce new elements. - Build towards the climax of the play."
+                    },
+                    {
+                        "des": "Conclusion/Resolution (6 minutes): - Resolve the central conflict or challenges faced by the characters. - Provide a satisfying conclusion to the story."
+                    },
+                    {
+                        "des": "Closing Remarks (2 minutes): - Thank the audience for attending. - Acknowledge the cast and crew."
+                    }
+                ],
+                "judgingCriteria": [
+                    {
+                        "des": "Acting (30%)"
+                    },
+                    {
+                        "des": "Depiction of characters (15%)"
+                    },
+                    {
+                        "des": "Voice clarity and energy level (10%)"
+                    },
+                    {
+                        "des": "Direction (15%)"
+                    },
+                    {
+                        "des": "Stage production (10%)"
+                    },
+                    {
+                        "des": "Use of props (10%)"
+                    },
+                    {
+                        "des": "Music and light (10%)"
+                    }
+                ],
+                "notes": [
+                    {
+                        "des": "Jury decisions are final and binding."
+                    },
+                    {
+                        "des": "The organizing team reserves the right to change or modify the rules."
+                    },
+                    {
+                        "des": "Not adhering to the time limit will result in negative marking. (5% penalty for every extra minute)"
+                    }
+                ]
+            }
+        ],
+        "participationFee": "400 per team"
+    },
+    "Monoact": {
+        "id": "Monoact",
+        "name": "MONOACT (Est. 2 hrs) :-",
+        "rule": [
+            {
+                "ruleName": "",
+                "overview": [
+                    {
+                        "des": "Monoact entails performance by a single person portraying an enthralling act of one or more characters. In drama, it is the vocalization of a character‘s thoughts, in literature, the verbalization. A dramatic mono-act is any recital of some duration put forth by the performer."
+                    }
+                ],
+                "participation": "Team",
+                "participationNo": "",
+                "description": [
+                    {
+                        "roundNo": ":",
+                        "rounds": [
+                            {
+                                "des": "Language used can be Hindi or English or bilingual."
+                            },
+                            {
+                                "des": "Script should be original/self-written. If found indulging in any such practices, it would result in disqualification of the team."
+                            },
+                            {
+                                "des": "Vulgarity is strictly prohibited."
+                            },
+                            {
+                                "des": "Use of flammable substances such as candles, matches or cigarettes or any alcoholic product during performance on stage is not allowed and will result in disqualification."
+                            },
+                            {
+                                "des": "The competition will consist of one round only."
+                            },
+                            {
+                                "des": "More than one participant from the same college are allowed but there should not be any similarities in the script."
+                            },
+                            {
+                                "des": "Participants will have to submit a pdf file containing the following things in advance: name of college and participant, script."
+                            },
+                            {
+                                "des": "Time limit: 10 minutes"
+                            }
+                        ]
+                    }
+                ],
+                "timeBreakdown": [],
+                "judgingCriteria": [
+                    {
+                        "des": "Acting (40%)"
+                    },
+                    {
+                        "des": "Script (15%)"
+                    },
+                    {
+                        "des": "Direction (15%)"
+                    },
+                    {
+                        "des": "Lights and Music (10%)"
+                    },
+                    {
+                        "des": "Overall Impact (20%)"
+                    }
+                ],
+                "notes": [
+                    {
+                        "des": "Jury decisions are final and binding."
+                    },
+                    {
+                        "des": "The organizing team reserves the right to change or modify the rules."
+                    },
+                    {
+                        "des": "Not adhering to the time limit will result in negative marking. (5% penalty for every extra minute)"
+                    }
+                ]
+            }
+        ],
+        "participationFee": 100
+    },
+    "FilmyEpics": {
+        "id": "FilmyEpics",
+        "name": "Filmy Epics :-",
+        "rule": [
+            {
+                "ruleName": "",
+                "overview": [
+                    {
+                        "des": "Short film making competition, the ultimate platform that each artist deserves. Amaze your viewers with your perspective, aesthetic sense, emotion, or simple ingenuity of idea. So, ignite the director, cinematographer, the sound specialist, the editor or simply an art connoisseur inside you waiting to leap out."
+                    }
+                ],
+                "participation": "There is no limit to the number of cast and crew members",
+                "participationNo": "",
+                "description": [
+                    {
+                        "roundNo": ":",
+                        "rounds": [
+                            {
+                                "des": "It is an offline event."
+                            },
+                            {
+                                "des": "Any type and number of video or film cameras may be used for filming. Animation and computer work is also permitted, and you may combine techniques as you deem fit."
+                            },
+                            {
+                                "des": "The team will not be provided with any equipment or computers for editing or any other purpose."
+                            },
+                            {
+                                "des": "The film should be 4 to 10 minutes including credits."
+                            },
+                            {
+                                "des": "If shot in 2.35:1, and/or any type of widescreen format, your film must be letterboxed for 4:3 or 16:9 ratio."
+                            },
+                            {
+                                "des": "The content of the film must be appropriate for the public screening. Filmmakers should assume a PG13 mentality when scripting projects. Caution should be taken to refrain from displaying obscenity or defamation or pornographic material."
+                            },
+                            {
+                                "des": "The organizers reserve the right to disqualify any film that deems inappropriate or if we cannot view your film on our equipment."
+                            },
+                            {
+                                "des": "The entries must be of minimum 480p resolution. The frame rate is allowed up to 30 fps."
+                            },
+                            {
+                                "des": "All members of the team must register on the portal and apply as a team."
+                            },
+                            {
+                                "des": "The soundtrack (no maximum time) and stock footage (time limit: maximum of 1 min 30 seconds) can be borrowed, but with due credits."
+                            },
+                            {
+                                "des": "Entries must be the original work of the entrant; must not infringe third party rights."
+                            },
+                            {
+                                "des": "The film need not be in English/Hindi, although if you choose to make a film in another language, it must contain English subtitles."
+                            },
+                            {
+                                "des": "The entries must adhere to the theme and can be of any genre."
+                            },
+                            {
+                                "des": "The short film will be submitted through the Website: {Insert link here}"
+                            }
+                        ]
+                    }
+                ],
+                "timeBreakdown": [],
+                "judgingCriteria": [
+                    {
+                        "des": "Effective portrayal of theme"
+                    },
+                    {
+                        "des": "Editing"
+                    },
+                    {
+                        "des": "Cinematography"
+                    },
+                    {
+                        "des": "Script"
+                    },
+                    {
+                        "des": "Acting"
+                    },
+                    {
+                        "des": "Sound"
+                    },
+                    {
+                        "des": "Overall Impact"
+                    },
+                    {
+                        "des": "Appeal"
+                    }
+                ],
+                "notes": [
+                    {
+                        "des": "Jury decisions are final and binding."
+                    },
+                    {
+                        "des": "The organizing team reserves the right to change or modify the rules."
+                    },
+                    {
+                        "des": "Not adhering to the time limit will result in negative marking. (5% penalty for every extra minute)"
+                    }
+                ]
+            }
+        ],
+        "participationFee": 200
+    }
+}
