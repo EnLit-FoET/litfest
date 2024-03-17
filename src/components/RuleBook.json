@@ -1,5 +1,5 @@
-{
-    "creativeFlair": {
+[
+    {
         "id": "creativeFlair",
         "name": "Creative Flair (Est:50 min)",
         "rule": [
@@ -62,7 +62,7 @@
         ],
         "participationFee": 50
     },
-    "kissa": {
+    {
         "id": "kissa",
         "name": "Kissa(Est: 2hrs)",
         "rule": [
@@ -80,7 +80,7 @@
                         "roundNo": "Part 1 :-",
                         "rounds": [
                             {
-                                "des": "TParticipants can write a story on any suitable topic of their choice."
+                                "des": "Participants can write a story on any suitable topic of their choice."
                             },
                             {
                                 "des": "The entries will be short stories with a word limit of approximately 1500 (±100) words."
@@ -144,7 +144,7 @@
         ],
         "participationFee": 100
     },
-    "debate": {
+    {
         "id": "clashOfOpinions",
         "name": "Clash Of Opinion(Est: 2hrs ):-",
         "rule": [
@@ -340,7 +340,7 @@
         ],
         "participationFee": 200
     },
-    "oration": {
+    {
         "id": "oration",
         "name": "Oration(Est: 1hr 40min)",
         "rule": [
@@ -415,7 +415,7 @@
         ],
         "participationFee": 100
     },
-    "nazm": {
+    {
         "id": "nazm",
         "name": "Nazm(Est: 1hr):-",
         "rule": [
@@ -474,7 +474,7 @@
         ],
         "participationFee": 150
     },
-    "rythmicRivals": {
+    {
         "id": "rythmicRivals",
         "name": "Rhythmic Rivals(Est: 1hr 30min):-",
         "rule": [
@@ -584,7 +584,7 @@
         ],
         "participationFee": 100
     },
-    "memeLit": {
+    {
         "id": "memeLit",
         "name": "Meme Lit:-",
         "rule": [
@@ -651,7 +651,7 @@
         ],
         "participationFee": 50
     },
-    "palletProwess": {
+    {
         "id": "palletProwess",
         "name": "Palette Prowess(Est: 2 hrs) :-",
         "rule": [
@@ -716,7 +716,7 @@
         ],
         "participationFee": 100
     },
-    "PixelQuill": {
+    {
         "id": "PixelQuill",
         "name": "PixelQuill(Est: 20min) :-",
         "rule": [
@@ -787,7 +787,7 @@
         ],
         "participationFee": 100
     },
-    "CreaseCrisp": {
+    {
         "id": "CreaseCrisp",
         "name": "Crease Crisp(Est: 60 min) :-",
         "rule": [
@@ -852,7 +852,7 @@
         ],
         "participationFee": 100
     },
-    "DictionSnap": {
+    {
         "id": "DictionSnap",
         "name": "Diction Snap(Est: 60 min) :-",
         "rule": [
@@ -921,7 +921,7 @@
         ],
         "participationFee": 100
     },
-    "STANDUP": {
+    {
         "id": "STANDUP",
         "name": "STANDUP(Est:1hr 30mins) :-",
         "rule": [
@@ -980,7 +980,7 @@
         ],
         "participationFee": 200
     },
-    "aurFIR": {
+    {
         "id": "aurFIR",
         "name": "Aur Fir (est 1hr 30mins) :-",
         "rule": [
@@ -1055,7 +1055,7 @@
         ],
         "participationFee": 200
     },
-    "StellarQuizzes": {
+    {
         "id": "StellarQuizzes",
         "name": "Stellar Quizzes :-",
         "rule": [
@@ -1105,7 +1105,7 @@
         ],
         "participationFee": "200 per team"
     },
-    "NukkadNatak": {
+    {
         "id": "NukkadNatak",
         "name": "NUKKAD NATAK(Est: 2 hr 30 min) :-",
         "rule": [
@@ -1188,7 +1188,7 @@
         ],
         "participationFee": "500 per team"
     },
-    "Theatre": {
+    {
         "id": "Theatre",
         "name": "THEATRE (Est. 5 hrs) :-",
         "rule": [
@@ -1293,7 +1293,7 @@
         ],
         "participationFee": "400 per team"
     },
-    "Monoact": {
+    {
         "id": "Monoact",
         "name": "MONOACT (Est. 2 hrs) :-",
         "rule": [
@@ -1370,7 +1370,7 @@
         ],
         "participationFee": 100
     },
-    "FilmyEpics": {
+    {
         "id": "FilmyEpics",
         "name": "Filmy Epics :-",
         "rule": [
@@ -1474,4 +1474,4 @@
         ],
         "participationFee": 200
     }
-}
+]

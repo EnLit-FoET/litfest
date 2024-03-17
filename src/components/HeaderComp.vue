@@ -8,37 +8,25 @@
           >
         </li>
       </ul>
-      <ul>
-        <li v-if="!this.loading && !loggedIn">
+      <ul :aria-busy="this.loading">
+        <li v-if="!loggedIn && !loading">
           <router-link
             role="button"
             class="outline contrast"
             to="/register"
-            :aria-busy="this.loading"
             >Login</router-link
           >
         </li>
         <li v-else-if="loggedIn">
-          <ul>
+          <ul v-if="!this.loading">
             <li>
               <router-link
-                v-if="this.dashboardOpen"
-                role="button"
-                class="route-link"
-                to="/"
-                @click="toggleDashboard()"
-                >Home</router-link
-              >
-              <router-link
-                v-if="!this.dashboardOpen"
-                role="button"
-                class="route-link"
                 to="/dashboard"
-                @click="toggleDashboard()"
-                >Dashboard</router-link
               >
+              <img :src="user.photoURL" height="35" width="35" style="object-fit: cover;border-radius: 50%;"/>
+              </router-link>
             </li>
-            <li v-if="!this.loading">
+            <li>
               <router-link
                 role="button"
                 class="outline contrast"
@@ -76,38 +64,29 @@
 </style>
 
 <script>
-  import { ref } from "vue";
-  import { getAuth, onAuthStateChanged, signOut } from "firebase/auth";
-
-  let auth;
-export default {
+  import {auth} from '@/utils'
+  export default {
   data() {
     return {
       loading: true,
-      dashboardOpen: ref(true),
-      loggedIn: ref(false),
+      loggedIn: false,
+      user: null
     };
   },
-  mounted() {
-    setTimeout(() => {
-      this.loading = false;
-    }, 2000);
-    auth = getAuth();
-    onAuthStateChanged(auth, (user)=>{
+  created() {
+    auth.onAuthStateChanged((user)=>{
       if(user){
         this.loggedIn = true;
-        this.dashboardOpen = !this.dashboardOpen;
+        this.user = user;
       }else{
         this.loggedIn = false;
       }
+      this.loading= false;
     });
   },
   methods: {
-    toggleDashboard() {
-      this.dashboardOpen = !this.dashboardOpen;
-    },
     logout() {
-      signOut(auth);
+      auth.signOut();
     },
   },
 };

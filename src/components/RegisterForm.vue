@@ -57,7 +57,9 @@
                     name: this.name,
                     college: this.college,
                     year: this.year,
-                    phone: this.phone
+                    phone: this.phone,
+                    photo : user.photoURL,
+                    events :[]
                 }
                 await setDoc(doc(usersDb, user.email), userData);
                 window.reload()
