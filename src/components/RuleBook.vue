@@ -1,14 +1,14 @@
 <template>
   <div class="rule">
-    <h1 class="main-heading">{{ creativeFlair.name }}</h1>
-    <p><span>Overview :</span> {{ creativeFlair.overview }}</p>
-    <p><span>Participation :</span> {{ creativeFlair.participation }}</p>
+    <h1 class="main-heading">{{ ruleBook.name }}</h1>
+    <p><span>Overview :</span> {{ ruleBook.overview }}</p>
+    <p><span>Participation :</span> {{ ruleBook.participation }}</p>
     <p class="optional">
-      <span>{{ creativeFlair.participationNo }}</span>
+      <span>{{ ruleBook.participationNo }}</span>
     </p>
     <p class="rule-highlight">Description of the round :</p>
     <div
-      v-for="des in creativeFlair.description"
+      v-for="des in ruleBook.description"
       :key="des.roundNo"
       class="list-rule"
     >
@@ -19,7 +19,7 @@
     </div>
     <p class="rule-highlight">Time breakdown :</p>
     <ul
-      v-for="time in creativeFlair.timeBreakdown"
+      v-for="time in ruleBook.timeBreakdown"
       :key="time"
       class="list-rule"
     >
@@ -27,17 +27,17 @@
     </ul>
     <p class="rule-highlight">Judging/Scoring criteria :</p>
     <ul
-      v-for="judge in creativeFlair.judgingCriteria"
+      v-for="judge in ruleBook.judgingCriteria"
       :key="judge"
       class="list-rule"
     >
       <li>{{ judge.des }}</li>
     </ul>
     <p class="rule-highlight">Note :</p>
-    <ul v-for="note in creativeFlair.notes" :key="note" class="list-rule">
+    <ul v-for="note in ruleBook.notes" :key="note" class="list-rule">
       <li>{{ note.des }}</li>
     </ul>
-    <p><span>Participation Fee :</span> {{ creativeFlair.participationFee }}</p>
+    <p><span>Participation Fee :</span> {{ ruleBook.participationFee }}</p>
     <button class="btn">Participate Now</button>
   </div>
 </template>
@@ -73,124 +73,18 @@
 </style>
 
 <script>
-import { useRoute } from "vue-router";
+import ruleBooks from "@/components/RuleBook.json";
 export default {
   data() {
     return {
-      ruleBook: "",
-      creativeFlair: {
-        name: "Creative Flair (Est:50 min)",
-        overview:
-          "Weave a web with words to inspire wonder and awe. This is a competition for all the storytellers out there who like working with pen and paper. The participants have to write the narrative based on the prompts.",
-        participation: "Individual",
-        participationNo: "",
-        description: [
-          {
-            roundNo: "",
-            rounds: [
-              {
-                des: "The participants will be given a new word every 4 minutes which they will have to incorporate in their prose. Total of 4 words + 1 bonus word will be given.",
-              },
-              {
-                des: "Not incorporating the 4 mandatory words in composition will lead to disqualification.",
-              },
-              {
-                des: "Incorporating the bonus word will lead to bonus points being granted.",
-              },
-            ],
-          },
-        ],
-        timeBreakdown: [
-          {
-            des: "Introduction and Prompt Explanation (5 minutes)",
-          },
-          {
-            des: "Brainstorming and Planning (7 minutes)",
-          },
-          {
-            des: "Writing Time (20 minutes)",
-          },
-          {
-            des: "Submission and Closing (3 minutes)",
-          },
-        ],
-        judgingCriteria: [
-          {
-            des: "Entries must be an original piece of work- plagiarism of any sort if detected will result in immediate disqualification.",
-          },
-        ],
-        notes: [
-          {
-            des: "Jury decisions are final and binding.",
-          },
-          {
-            des: "There will be a knock-out round in case of tie.",
-          },
-          {
-            des: "The organizing team reserves the right to change or modify the rules.",
-          },
-        ],
-        participationFee: 50,
-      },
-      kissa: {
-        name: "Kissa(Est: 2hrs)",
-        overview:
-          "Weave a web with words to inspire wonder and awe. This is a competition for all the storytellers out there who like working with pen and paper. The participants have to write the narrative based on the prompts.",
-        participation: "Team",
-        participationNo: "<span> Total no. of team members: </span> 2",
-        description: [
-          {
-            roundNo: "",
-            rounds: [
-              {
-                des: "The participants will be given a new word every 4 minutes which they will have to incorporate in their prose. Total of 4 words + 1 bonus word will be given.",
-              },
-              {
-                des: "Not incorporating the 4 mandatory words in composition will lead to disqualification.",
-              },
-              {
-                des: "Incorporating the bonus word will lead to bonus points being granted.",
-              },
-            ],
-          },
-        ],
-        timeBreakdown: [
-          {
-            des: "Introduction and Prompt Explanation (5 minutes)",
-          },
-          {
-            des: "Brainstorming and Planning (7 minutes)",
-          },
-          {
-            des: "Writing Time (20 minutes)",
-          },
-          {
-            des: "Submission and Closing (3 minutes)",
-          },
-        ],
-        judgingCriteria: [
-          {
-            des: "Entries must be an original piece of work- plagiarism of any sort if detected will result in immediate disqualification.",
-          },
-        ],
-        notes: [
-          {
-            des: "Jury decisions are final and binding.",
-          },
-          {
-            des: "There will be a knock-out round in case of tie.",
-          },
-          {
-            des: "The organizing team reserves the right to change or modify the rules.",
-          },
-        ],
-        participationFee: 50,
-      },
+      ruleBook: null,
+      ruleBooks: ruleBooks,
+      event_id : ""
     };
   },
-  mounted() {
-    const route = useRoute();
-    console.log("route: ", route.params.to);
+  created() {
+    this.event_id = this.$route.params.to
+    this.ruleBook = this.ruleBooks.filter((rule) => rule.id == this.event_id);
   },
 };
 </script>

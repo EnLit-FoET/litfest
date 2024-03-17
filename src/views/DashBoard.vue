@@ -10,7 +10,7 @@
                 <article v-if="this.isEventLive && this.isRegforcurrentEvent">
                     <header><GreenDot/> Event is happening</header>
                     <hgroup>
-                        <h5>{{ this.liveEvent.event_name }}</h5>
+                        <h5>{{ this.liveEvent.name }}</h5>
                         <p>{{ this.liveEvent.timing }}</p>
                     </hgroup>
                     <p v-if="this.liveEvent.notice">{{ this.liveEvent.notice }}</p>
@@ -28,12 +28,12 @@
                     <div v-if="this.unRegisteredEvents.length>0">
                         <h4>Register for more events</h4>
                         <ul>
-                            <li v-for="event in this.unRegisteredEvents" :key="event.event_id">
+                            <li v-for="event in this.unRegisteredEvents" :key="event.id">
                                 <article>
                                     <header>{{ event.name }}</header>
-                                    <p>{{ event.description }}</p>
+                                    <p>{{ event.rule[0].overview[0].des }}</p>
                                     <footer>
-                                        <button @click="this.registerForEvent(event.event_id)">Register</button>
+                                        <button @click="this.registerForEvent(event.id)">Register</button>
                                     </footer>
                                 </article>
                             </li>
@@ -68,10 +68,10 @@
                         <div v-if="this.userEvents.length>0">
                             <h4>Registered Events</h4>
                             <ul>
-                                <li v-for="event in this.userEvents" :key="event.event_id">
+                                <li v-for="event in this.userEvents" :key="event.id">
                                     <article>
                                         <header>{{ event.name }}</header>
-                                        <p>{{ event.description }}</p>
+                                        <p>{{  event.rule[0].overview[0].des }}</p>
                                     </article>
                                 </li>
                             </ul>
@@ -81,15 +81,9 @@
                         </div>
                         <div v-if="this.userData.submissions">
                             <h4>Your Submissions</h4>
-                            <ul>
-                                <li v-for="submission in this.userData.submissions" :key="submission.id">
-                                    <article>
-                                        <header>{{ submission.event_id }}</header>
-                                        <p>{{ submission.time }}</p>
-                                        <footer>
-                                            <a :href="submission.fileURL" target="_blank">View your submission</a>
-                                        </footer>
-                                    </article>
+                            <ul v-if="this.liveEvent">
+                                <li v-for="(submission,i) in this.userData.submissions" :key="i">
+                                    <SubmissionBox :sub="submission" :liveEvent="this.liveEvent.id" @submittedForLive="(e) => {this.submission.uploaded=true;this.submission.fileURL = e}"/>
                                 </li>
                             </ul>
                         </div>
@@ -102,8 +96,9 @@
 <script>
 import GreenDot from '@/components/GreenDot.vue';
 import RegisterForm from '@/components/RegisterForm.vue';
+import SubmissionBox from '@/components/SubmissionBox.vue';
 import { auth,db,storage } from '@/utils';
-import { getDoc, getDocs, collection, doc, setDoc } from 'firebase/firestore';
+import { getDoc, getDocs, collection, doc, setDoc, onSnapshot } from 'firebase/firestore';
 import { ref, uploadBytes, getDownloadURL } from 'firebase/storage';
 export default{
     name: "DashBoard",
@@ -126,7 +121,8 @@ export default{
     },
     components: {
         RegisterForm,
-        GreenDot
+        GreenDot,
+        SubmissionBox
     },
     created(){
         let usersDb = collection(db, "users");
@@ -146,20 +142,24 @@ export default{
             }
         });
         this.getEvents();
+        this.checkEventLive();
     },
     computed: {
         userEvents(){
             return this.events.filter((event) => {
-                return this.userData.events.indexOf(event.event_id)!=-1;
+                return this.userData.events.indexOf(event.id)!=-1;
             });
         },
         unRegisteredEvents(){
             return this.events.filter((event) => {
-                return this.userData.events.indexOf(event.event_id)==-1;
+                return this.userData.events.indexOf(event.id)==-1;
             });
         },
         isRegforcurrentEvent(){
-            return this.userData.events.indexOf(this.liveEvent.event_id)!=-1;
+            if (!this.liveEvent) {
+                return false;
+            }
+            return this.userData.events.indexOf(this.liveEvent.id)!=-1;
         }
     },
     methods : {
@@ -184,16 +184,23 @@ export default{
             }
             this.submission.loading = true;
             let submissionDb = collection(db, "submissions");
-            let event = this.liveEvent.event_id;
+            let event = this.liveEvent.id;
             let file = document.querySelector("#event_submission").files[0];
             let storageRef = ref(storage, `submissions/${event}/${this.user.email}/${file.name}`);
+            if (!this.isEventLive || !this.isRegforcurrentEvent || !file || !this.liveEvent.submissions) {
+                return
+            }
             uploadBytes(storageRef, file).then(async()=>{
                 const url = await getDownloadURL(storageRef);
                 let submissionRef = doc(submissionDb, `${event}-${this.user.email}`);
                 setDoc(submissionRef, {
                     fileURL: url,
                     time : new Date(),
-                    user : doc(collection(db, "users"), this.user.email)
+                    user : doc(collection(db, "users"), this.user.email),
+                    event : {
+                        id : this.liveEvent.id,
+                        name : this.liveEvent.name
+                    }
                 });
                 let usersDb = collection(db, "users");
                 let userDoc = doc(usersDb, this.user.email);
@@ -211,6 +218,21 @@ export default{
             .finally(()=>{
                this.submission.loading = false;
             })
+        },
+        checkEventLive(){
+            let configDb = collection(db, "config");
+            let configDoc = doc(configDb, "live");
+            onSnapshot(configDoc, (d) => {
+                this.isEventLive = d.data().isLive;
+                if(this.isEventLive){
+                    getDoc(d.data().event)
+                    .then((doc) => {
+                        this.liveEvent = doc.data();
+                        this.liveEvent["notice"] = d.data().notice;
+                        this.liveEvent["timing"] = d.data().timing;
+                    });
+                }
+            });
         }
     }
 }

@@ -652,7 +652,7 @@
         "participationFee": 50
     },
     {
-        "id": "palletProwess",
+        "id": "palleteProwess",
         "name": "Palette Prowess(Est: 2 hrs) :-",
         "rule": [
             {
@@ -717,7 +717,7 @@
         "participationFee": 100
     },
     {
-        "id": "PixelQuill",
+        "id": "pixelQuill",
         "name": "PixelQuill(Est: 20min) :-",
         "rule": [
             {
@@ -788,7 +788,7 @@
         "participationFee": 100
     },
     {
-        "id": "CreaseCrisp",
+        "id": "creaseCrisp",
         "name": "Crease Crisp(Est: 60 min) :-",
         "rule": [
             {
@@ -853,7 +853,7 @@
         "participationFee": 100
     },
     {
-        "id": "DictionSnap",
+        "id": "dictionSnap",
         "name": "Diction Snap(Est: 60 min) :-",
         "rule": [
             {
@@ -922,8 +922,8 @@
         "participationFee": 100
     },
     {
-        "id": "STANDUP",
-        "name": "STANDUP(Est:1hr 30mins) :-",
+        "id": "standup",
+        "name": "Standup (Est:1hr 30mins)",
         "rule": [
             {
                 "ruleName": "",
@@ -1056,7 +1056,7 @@
         "participationFee": 200
     },
     {
-        "id": "StellarQuizzes",
+        "id": "stellarQuizzes",
         "name": "Stellar Quizzes :-",
         "rule": [
             {
@@ -1106,8 +1106,8 @@
         "participationFee": "200 per team"
     },
     {
-        "id": "NukkadNatak",
-        "name": "NUKKAD NATAK(Est: 2 hr 30 min) :-",
+        "id": "nukkadNatak",
+        "name": "Nukkad Natak(Est: 2 hr 30 min)",
         "rule": [
             {
                 "ruleName": "",
@@ -1189,8 +1189,8 @@
         "participationFee": "500 per team"
     },
     {
-        "id": "Theatre",
-        "name": "THEATRE (Est. 5 hrs) :-",
+        "id": "theatre",
+        "name": "Theatre (Est. 5 hrs) :-",
         "rule": [
             {
                 "ruleName": "",
@@ -1294,8 +1294,8 @@
         "participationFee": "400 per team"
     },
     {
-        "id": "Monoact",
-        "name": "MONOACT (Est. 2 hrs) :-",
+        "id": "monoact",
+        "name": "Monoact (Est. 2 hrs) :-",
         "rule": [
             {
                 "ruleName": "",
@@ -1371,7 +1371,7 @@
         "participationFee": 100
     },
     {
-        "id": "FilmyEpics",
+        "id": "filmyEpics",
         "name": "Filmy Epics :-",
         "rule": [
             {
