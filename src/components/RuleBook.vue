@@ -1,5 +1,6 @@
 <template>
-  <div class="rule">
+  <div :aria-busy="this.loading" v-if="loading"></div>
+  <div class="rule" v-else>
     <h1 class="main-heading">{{ ruleBook.name }}</h1>
     <p><span>Overview :</span> {{ ruleBook.overview }}</p>
     <p><span>Participation :</span> {{ ruleBook.participation }}</p>
@@ -74,17 +75,32 @@
 
 <script>
 import ruleBooks from "@/components/RuleBook.json";
+import { db } from "@/utils";
+import { collection, doc, getDoc } from "firebase/firestore";
 export default {
   data() {
     return {
       ruleBook: null,
       ruleBooks: ruleBooks,
-      event_id : ""
+      event_id : "",
+      loading : true
     };
   },
   created() {
     this.event_id = this.$route.params.to
-    this.ruleBook = this.ruleBooks.filter((rule) => rule.id == this.event_id);
+    let eventsDb = collection(db, "events");
+    let docRef = doc(eventsDb, this.event_id);
+    getDoc(docRef).then((doc) => {
+      if (doc.exists()) {
+        this.ruleBook = doc.data();
+      }
+      else{
+        this.ruleBook = this.ruleBooks.filter((rule) => rule.id == this.event_id);
+      }
+    })
+    .finally(() => {
+      this.loading = false;
+    });
   },
 };
 </script>
