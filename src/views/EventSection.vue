@@ -111,6 +111,7 @@ export default {
         {
           id: "ArtExhibition",
           name: "Art Exhibition",
+          guestImage: require("../assets/images/guests/artexhibition.png"),
           eventabout:
             "To inspire and provoke thoughts, offering a canvas for diverse perspectives and creative expressions, the art exhibition and fair serves as a platform to showcase the power of visual storytelling, inviting attendees to explore the intersections of art and narrative. Discover the fusion of literature and art unveiled by The Lalit Kala Academy. From evocative paintings to thought-provoking sculptures, experience a sensory feast that redefines beauty and imagination.",
         },

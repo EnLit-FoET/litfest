@@ -14,6 +14,7 @@ const router = createRouter({
     {path: "/dashboard", component: DashBoard, meta: {requiresAuth : true}},
     {path: "/rulebook/:to", component: () => import("../components/RuleBook.vue"), meta: {requiresAuth : true}},
     {path: "/register", component: () => import("../components/SignUp.vue")},
+    {path: "/admin/requests", component: () => import("../views/ParticipationReq.vue"), meta: {requiresAuth : true}},
   ]
 })
 
