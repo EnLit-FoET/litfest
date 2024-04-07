@@ -10,8 +10,15 @@
       />
     </div>
   </div>
-  <h1 class="main-head">Potential sponsors</h1>
-  <div class="sponsors"></div>
+  <h1 class="main-head">Our Sponsor</h1>
+  <div class="sponsors">
+    <img
+      v-bind:src="sponsor.image"
+      :alt="sponsor.id"
+      v-for="sponsor in sponsors"
+      :key="sponsor.id"
+    />
+  </div>
   <h1 class="main-head">Media Partners</h1>
   <div class="media-partners">
     <img
@@ -59,13 +66,13 @@
   width: 60%;
 }
 
-.media-partners {
+.media-partners, .sponsors {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
 }
 
-.media-partners img {
+.media-partners img, .sponsors img{
   width: 300px;
   background-color: var(--theme2);
 }
@@ -146,40 +153,6 @@
   margin: 0 40px;
 }
 
-/* @media screen and (max-width: 768px) {
-  .marquee-content img {
-    height: 100px;
-  }
-} */
-/* 
-@media screen and (max-width: 480px) {
-  .ass-slide {
-    animation: none !important;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    background-color: #000;
-  }
-
-  .associates {
-    background-color: #00000000;
-  }
-
-  .associates::after,
-  .associates::before {
-    display: none;
-  }
-
-  .ass-slide:last-child {
-    display: none;
-  }
-  .ass-slide img {
-    height: auto;
-    width: 250px;
-    margin: 11px 0;
-  }
-} */
 
 @media screen and (max-width: 350px) {
   .media-partners img {
@@ -195,47 +168,47 @@ export default {
       associates: [
         {
           id: "universal",
-          image: require("../assets/images/partners/universal.svg"),
+          image: require("../assets/images/partners/universal.png"),
         },
         {
           id: "thingtodo",
-          image: require("../assets/images/partners/thingstodo.svg"),
+          image: require("../assets/images/partners/thingtodo.png"),
         },
         {
           id: "beingbook",
-          image: require("../assets/images/partners/beingbook.svg"),
+          image: require("../assets/images/partners/beingbook.png"),
         },
         {
           id: "lalitkala",
-          image: require("../assets/images/partners/lalitkala.svg"),
+          image: require("../assets/images/partners/lalitkala.png"),
         },
         {
           id: "lkdarshan",
-          image: require("../assets/images/partners/lkdarshan.svg"),
+          image: require("../assets/images/partners/lkdarshan.png"),
         },
         {
           id: "vead",
-          image: require("../assets/images/partners/vead.svg"),
+          image: require("../assets/images/partners/vead.png"),
         },
       ],
       sponsors: [
         {
           id: "some",
-          image: "",
+          image: require("../assets/images/partners/book.png"),
         },
       ],
       mediaPartners: [
         {
           id: "amar",
-          image: require("../assets/images/partners/amar.svg"),
+          image: require("../assets/images/partners/amar.png"),
         },
         {
           id: "radio",
-          image: require("../assets/images/partners/radio.svg"),
+          image: require("../assets/images/partners/radio.png"),
         },
         {
           id: "dainik",
-          image: require("../assets/images/partners/dainik.svg"),
+          image: require("../assets/images/partners/dainik.png"),
         },
       ],
     };

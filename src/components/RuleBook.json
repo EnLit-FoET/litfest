@@ -1400,7 +1400,7 @@
                 "participationNo": "1",
                 "description": [
                     {
-                        "roundNo": ":",
+                        "roundNo": "",
                         "rounds": [
                             {
                                 "des": "Language used can be Hindi or English or bilingual."
@@ -1477,7 +1477,7 @@
                 "participationNo": "No Limit",
                 "description": [
                     {
-                        "roundNo": ":",
+                        "roundNo": "",
                         "rounds": [
                             {
                                 "des": "It is an offline event."

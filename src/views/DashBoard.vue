@@ -27,14 +27,14 @@
                 <div class="grid" style="position :relative">
                     <div v-if="this.unRegisteredEvents.length>0">
                         <h4>Register for more events</h4>
-                        <ul>
+                        <ul class="event-list">
                             <li v-for="event in this.unRegisteredEvents" :key="event.id">
                                 <article>
                                     <header>{{ event.name }}</header>
                                     <p>{{ event.rule[0].overview[0].des }}</p>
                                     <footer>
-                                        <button @click="this.registerForEvent(event.id)" class="btn">Register</button>
-                                        <router-link :to="'/rulebook/'+event.id" class="link" >Know more...</router-link>
+                                        <button @click="this.registerForEvent(event.id)" class="link-reg">Register</button>
+                                        <router-link :to="'/rulebook/'+event.id" class="link-reg" >Know more</router-link>
                                     </footer>
                                 </article>
                             </li>
@@ -68,7 +68,7 @@
                         </table>
                         <div v-if="this.userEvents.length>0">
                             <h4>Registered Events</h4>
-                            <ul>
+                            <ul class="event-list">
                                 <li v-for="event in this.userEvents" :key="event.id">
                                     <article>
                                         <header>{{ event.name }}</header>
@@ -94,6 +94,39 @@
         </div>
     </div>
 </template>
+
+<style>
+.event-list {
+    padding-left: 0 !important;
+}
+.event-list li{
+    list-style-type: none;
+}
+.event-list footer{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgba(0, 0, 0, 0);
+    text-align: center;
+}
+
+.event-list footer a {
+    text-decoration: none !important;}
+
+.link-reg{
+    color: #fff;
+    background-color: teal;
+    border: 1px solid teal;
+    padding: 10px 2%;
+    width: 30%;
+    border-radius: 0 !important;
+}
+.link-reg:hover{
+    background-color: rgba(0, 128, 128, 0);
+    border: 1px solid teal;
+}
+</style>
 <script>
 import GreenDot from '@/components/GreenDot.vue';
 import RegisterForm from '@/components/RegisterForm.vue';

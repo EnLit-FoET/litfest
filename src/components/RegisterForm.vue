@@ -4,7 +4,7 @@
         <form @submit.prevent="registerUser">
             <div>
                 <label for="email">Email address</label>
-                <input type="email" id="email" v-model="email" required>
+                <input type="email" id="email" v-model="email" required readonly>
             </div>
             <div>
                 <label for="name">Name</label>
@@ -12,15 +12,22 @@
             </div>
             <div>
                 <label for="college">College</label>
-                <input type="text" id="college" v-model="college" required>
+                <select v-model="college" required>
+                    <option v-for="college in collegeList" :key="college" :value="college">{{ college }}</option>
+                </select>
             </div>
             <div>
                 <label for="year">Year</label>
-                <input type="text" id="year" v-model="year" required>
+                <select v-model="year" required>
+                    <option value="1st">1st Year</option>
+                    <option value="2nd">2nd Year</option>
+                    <option value="3rd">3rd Year</option>
+                    <option value="4th">4th Year</option>
+                </select>
             </div>
             <div>
                 <label for="phone">Phone</label>
-                <input type="text" id="phone" v-model="phone" required>
+                <input type="text" id="phone" v-model="phone" required minlength="10" maxlength="10">
             </div>
             <button type="submit" class="btn">Register</button>
         </form>
@@ -29,7 +36,7 @@
 
 <script>
     import { auth,db } from "@/utils"
-    import { collection, setDoc, doc } from "firebase/firestore";
+    import { collection, setDoc, doc, getDoc } from "firebase/firestore";
     export default{
         data(){
             return{
@@ -37,7 +44,8 @@
                 name : "",
                 college : "",
                 year : "",
-                phone : ""
+                phone : "",
+                collegeList : []
             }
         },
         mounted(){
@@ -45,6 +53,13 @@
                 if (user) {
                     this.email = user.email;
                     this.name = user.displayName;
+                }
+            });
+            let configDb = collection(db, "config");
+            let docRef = doc(configDb, "form-list");
+            getDoc(docRef).then((doc) => {
+                if (doc.exists()) {
+                    this.collegeList = doc.data().colleges;
                 }
             });
         },

@@ -52,7 +52,7 @@ background: linear-gradient(#00000079, #00000079),
 }
 #word {
 background: linear-gradient(#00000079, #00000079),
-  url(../assets/images/speech.svg);
+  url(../assets/images/speech.png);
 }
 #nagma {
 background: linear-gradient(#00000061, #00000061),
@@ -161,37 +161,37 @@ data() {
           {
             id : "creativeFlair",
             eventName: "Creative Flair",
-            eventImage: require("../assets/images/events/creative.svg"),
+            eventImage: require("../assets/images/events/creative.png"),
             eventabout: "Those with creativity, wit and imagination are provided with a stage to showcase their crafting in the presence of a captivated audience, united by shared interests and ignited passions.",
           },
           {
             id : "kissa",
             eventName: "Kissa",
-            eventImage: require("../assets/images/events/story.svg"),
+            eventImage: require("../assets/images/events/story.png"),
             eventabout: "Crafting compelling tales within a confined timeframe, story writers captivate judges with originality and emotion in concise novellas. It's a test of literary skill, urging participants to distill their narrative prowess into succinct, impactful stories.",
           },
           {
             id : "clashOfOpinions",
             eventName: "Clash of Opnions",
-            eventImage: require("../assets/images/events/debate.svg"),
+            eventImage: require("../assets/images/events/debate.png"),
             eventabout: "Debate competitions demand concise, precise arguments, showcasing participants' quick thinking, articulate expression, and strategic use of evidence within a competitive framework.",
           },
           {
             id : "oration",
             eventName: "Oration",
-            eventImage: require("../assets/images/events/speechex.svg"),
+            eventImage: require("../assets/images/events/speechex.png"),
             eventabout: "The competition is a dynamic showcase of spontaneous eloquence. Participants deliver unrehearsed speeches on given topics, showcasing quick thinking, persuasive communication, and depth of knowledge in a limited preparation time. It's a concise yet impactful test of extemporaneous speaking skills.",
           },
           {
             id : "rythmicRivals",
             eventName: "Rythmic Rivals",
-            eventImage: require("../assets/images/events/poetry.svg"),
+            eventImage: require("../assets/images/events/poetry.png"),
             eventabout: "A poetry competition is a creative battleground where participants weave emotions and imagery into concise verses, expressing themes with precision. It's a celebration of linguistic finesse and emotional resonance, showcasing the power of succinct poetic expression.",
           },
           {
             id : "nazm",
             eventName: "Nazm",
-            eventImage: require("../assets/images/events/shayari.svg"),
+            eventImage: require("../assets/images/events/shayari.png"),
             eventabout: "The Shayari competition is a poetic showdown where participants succinctly express their emotions in Urdu and Hindi, creating a captivating tapestry of linguistic finesse and creativity.",
           },
         ],
@@ -203,25 +203,25 @@ data() {
           {
             id : "memeLit",
             eventName: "Meme Lit",
-            eventImage: require("../assets/images/events/meme.svg"),
+            eventImage: require("../assets/images/events/meme.png"),
             eventabout: "Debate competitions demand concise, precise arguments, showcasing participants' quick thinking, articulate expression, and strategic use of evidence within a competitive framework.",
           },
           {
             id : "palletProwess",
             eventName: "Palette Prowess",
-            eventImage: require("../assets/images/events/poster.svg"),
+            eventImage: require("../assets/images/events/poster.png"),
             eventabout: "In the Poster Making Competition, participants channel their creativity to visually communicate a provided theme through compelling artworks, combining artistry and effective messaging on a poster.",
           },
           {
             id : "PixelQuill",
             eventName: "PixelQuill",
-            eventImage: require("../assets/images/events/calligraphy.svg"),
+            eventImage: require("../assets/images/events/calligraphy.png"),
             eventabout: "Those with creativity, wit and imagination are provided with a stage to showcase their crafting in the presence of a captivated audience, united by shared interests and ignited passions.",
           },
           {
             id : "CreaseCrisp",
             eventName: "Crease Crisp",
-            eventImage: require("../assets/images/events/origami.svg"),
+            eventImage: require("../assets/images/events/origami.png"),
             eventabout: "Crafting compelling tales within a confined timeframe, story writers captivate judges with originality and emotion in concise novellas. It's a test of literary skill, urging participants to distill their narrative prowess into succinct, impactful stories.",
           },
         ],
@@ -233,25 +233,25 @@ data() {
           {
             id : "DictionSnap",
             eventName: "Diction Snap",
-            eventImage: require("../assets/images/events/spellbee.svg"),
+            eventImage: require("../assets/images/events/spellbee.png"),
             eventabout: "The Spell Bee competition is a linguistic contest meticulously designed to assess participants' prowess in spelling. With precision and efficiency, it challenges individuals to showcase their mastery of language, ensuring a rigorous examination of their spelling skills.",
           },
           {
             id : "StellarQuizzes",
             eventName: "Stellar Quizzes",
-            eventImage: require("../assets/images/events/quiz.svg"),
+            eventImage: require("../assets/images/events/quiz.png"),
             eventabout: "A dynamic challenge where participants showcase their expertise on interesting topics. It’s a quick and engaging test of knowledge, requiring precision and efficiency to conquer the theme-based questions",
           },
           {
             id : "STANDUP",
             eventName: "Standup",
-            eventImage: require("../assets/images/events/openmic.svg"),
+            eventImage: require("../assets/images/events/standup.png"),
             eventabout: "Standup Comedy",
           },
           {
             id : "aurFIR",
             eventName: "Aur Fir",
-            eventImage: require("../assets/images/events/openmic.svg"),
+            eventImage: require("../assets/images/events/storytelling.png"),
             eventabout: "The Story Telling Competition.",
           },
         ],
@@ -263,25 +263,25 @@ data() {
           {
             id : "FilmyEpics",
             eventName: "Filmy Epics",
-            eventImage: require("../assets/images/events/shortfilm.svg"),
+            eventImage: require("../assets/images/events/shortfilm.png"),
             eventabout: "Those with creativity, wit and imagination are provided with a stage to showcase their crafting in the presence of a captivated audience, united by shared interests and ignited passions.",
           },
           {
             id : "Theatre",
             eventName: "Theatre",
-            eventImage: require("../assets/images/events/theatre.svg"),
+            eventImage: require("../assets/images/events/theatre.png"),
             eventabout: "Crafting compelling tales within a confined timeframe, story writers captivate judges with originality and emotion in concise novellas. It's a test of literary skill, urging participants to distill their narrative prowess into succinct, impactful stories.",
           },
           {
             id : "Monoact",
             eventName: "Monoact",
-            eventImage: require("../assets/images/events/monoact.svg"),
+            eventImage: require("../assets/images/events/monoact.png"),
             eventabout: "Those with creativity, wit and imagination are provided with a stage to showcase their crafting in the presence of a captivated audience, united by shared interests and ignited passions.",
           },
           {
             id : "NukkadNatak",
             eventName: "Nukkad Natak",
-            eventImage: require("../assets/images/events/nukkad.svg"),
+            eventImage: require("../assets/images/events/nukkad.png"),
             eventabout: " Crafting compelling tales within a confined timeframe, story writers captivate judges with originality and emotion in concise novellas. It's a test of literary skill, urging participants to distill their narrative prowess into succinct, impactful stories.",
           },
         ],
