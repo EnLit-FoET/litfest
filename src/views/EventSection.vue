@@ -44,6 +44,10 @@
   width: 100%;
 }
 
+#Workshop{
+  background: url(../assets/images/guests/artexhibition.svg);
+}
+
 #ArtExhibition {
   background: linear-gradient(#00000079, #00000079),
     url(../assets/images/guests/artexhibition.svg);
@@ -96,6 +100,12 @@ export default {
           eventabout:
             "Dive into the pulse of our literature fest with an exclusive Influencer Program featuring the dynamic Saurabh Chandra (Things to do in Lucknow) and the charismatic Prince Maurya (Lucknow Darshan). Join us as these influencers share their insights, experiences, and unique perspectives on the city's vibrant culture and hidden gems. Be part of this engaging session, where they unravel the tapestry of Lucknow's charm.",
         },
+        {
+          guestName: " Panel Discussion",
+          guestImage: require("../assets/images/guests/influencer.svg"),
+          eventabout:
+            "lorem ipsum dolor sit amet, consect lorem",
+        },
       ],
       exhibitions: [
         {
@@ -110,6 +120,13 @@ export default {
           guestImage: require("../assets/images/guests/bookexhibition.svg"),
           eventabout:
             " Immerse yourself in a haven of words, ideas, and stories that transcend boundaries. From classic novels to contemporary bestsellers, the book fair promises a treasure trove for every avid reader. The world of literature scattered by Being Bookish and Universal Books awaits you to delve into the entrancing world of literature. Come, explore, and let the pages of these literary wonders ignite your imagination.",
+        },
+        {
+          id: "Workshop",
+          name: "Workshops",
+          guestImage: require("../assets/images/guests/bookexhibition.svg"),
+          eventabout:
+            "Content",
         },
       ],
     };

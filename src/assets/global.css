@@ -110,6 +110,7 @@
     font-weight: 500;
     border-radius: 0;
     padding: auto 25px;
+    min-width: 20% !important;
   }
   .btn:hover {
     background-color: var(--theme2);

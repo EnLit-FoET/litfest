@@ -20,7 +20,7 @@
                             <input type="submit" value="Submit" @click="this.uploadFile" :aria-busy="this.submission.loading" :disabled="this.submission.loading"/>
                         </fieldset>
                         <p v-else>
-                            <a :href="this.submission.fileURL" target="_blank">View your submission</a>
+                            <a :href="this.submission.fileURL" target="_blank" class="btn">View your submission</a>
                         </p>
                     </footer>
                 </article>
@@ -33,7 +33,8 @@
                                     <header>{{ event.name }}</header>
                                     <p>{{ event.rule[0].overview[0].des }}</p>
                                     <footer>
-                                        <button @click="this.registerForEvent(event.id)">Register</button>
+                                        <button @click="this.registerForEvent(event.id)" class="btn">Register</button>
+                                        <router-link :to="'/rulebook/'+event.id" class="link" >Know more...</router-link>
                                     </footer>
                                 </article>
                             </li>

@@ -62,7 +62,7 @@
                     events :[]
                 }
                 await setDoc(doc(usersDb, user.email), userData);
-                window.reload()
+                location.reload()
             }
         }
     }

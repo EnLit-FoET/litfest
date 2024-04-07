@@ -21,6 +21,12 @@
           <ul v-if="!this.loading">
             <li>
               <router-link
+                to="/" style="color: #fff !important;"
+              >Home
+              </router-link>
+            </li>
+            <li>
+              <router-link
                 to="/dashboard"
               >
               <img :src="user.photoURL" height="35" width="35" style="object-fit: cover;border-radius: 50%;"/>

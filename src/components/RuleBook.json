@@ -1,7 +1,7 @@
 [
     {
         "id": "creativeFlair",
-        "name": "Creative Flair (Est:50 min)",
+        "name": "Creative Flair",
         "rule": [
             {
                 "ruleName": "",
@@ -11,7 +11,7 @@
                     }
                 ],
                 "participation": "Individual",
-                "participationNo": "",
+                "participationNo": "1",
                 "description": [
                     {
                         "roundNo": "",
@@ -64,7 +64,7 @@
     },
     {
         "id": "kissa",
-        "name": "Kissa(Est: 2hrs)",
+        "name": "Kissa",
         "rule": [
             {
                 "ruleName": "",
@@ -74,7 +74,7 @@
                     }
                 ],
                 "participation": "Team",
-                "participationNo": "Total no. of team members: 2",
+                "participationNo": "2",
                 "description": [
                     {
                         "roundNo": "Part 1 :-",
@@ -111,7 +111,11 @@
                         ]
                     }
                 ],
-                "timeBreakdown": [],
+                "timeBreakdown": [
+                    {
+                        "des": "NA"
+                    }
+                ],
                 "judgingCriteria": [
                     {
                         "des": "Entries must be an original piece of work - plagiarism of any sort if detected will result in immediate disqualification."
@@ -146,7 +150,7 @@
     },
     {
         "id": "clashOfOpinions",
-        "name": "Clash Of Opinion(Est: 2hrs ):-",
+        "name": "Clash Of Opinion",
         "rule": [
             {
                 "ruleName": "English:-",
@@ -218,8 +222,16 @@
                         ]
                     }
                 ],
-                "timeBreakdown": [],
-                "judgingCriteria": [],
+                "timeBreakdown": [
+                    {
+                        "des": "NA"
+                    }
+                ],
+                "judgingCriteria": [
+                    {
+                        "des": "NA"
+                    }
+                ],
                 "notes": [
                     {
                         "des": "Participants will not be allowed to take any paper or material with them during the debate."
@@ -314,8 +326,16 @@
                         ]
                     }
                 ],
-                "timeBreakdown": [],
-                "judgingCriteria": [],
+                "timeBreakdown": [
+                    {
+                        "des": "NA"
+                    }
+                ],
+                "judgingCriteria": [
+                    {
+                        "des": "NA"
+                    }
+                ],
                 "notes": [
                     {
                         "des": "वाद-विवाद के दौरान प्रतिभागियों को अपने साथ कोई कागज या सामग्री ले जाने की अनुमति नहीं होगी।"
@@ -342,7 +362,7 @@
     },
     {
         "id": "oration",
-        "name": "Oration(Est: 1hr 40min)",
+        "name": "Oration",
         "rule": [
             {
                 "ruleName": "",
@@ -352,7 +372,7 @@
                     }
                 ],
                 "participation": "Individual",
-                "participationNo": "",
+                "participationNo": "1",
                 "description": [
                     {
                         "roundNo": "Round 1: (50%)",
@@ -392,8 +412,16 @@
                         ]
                     }
                 ],
-                "timeBreakdown": [],
-                "judgingCriteria": [],
+                "timeBreakdown": [
+                    {
+                        "des": "NA"
+                    }
+                ],
+                "judgingCriteria": [
+                    {
+                        "des": "NA"
+                    }
+                ],
                 "notes": [
                     {
                         "des": "Participants must articulate precise thoughts on assigned topics."
@@ -417,7 +445,7 @@
     },
     {
         "id": "nazm",
-        "name": "Nazm(Est: 1hr):-",
+        "name": "Nazm",
         "rule": [
             {
                 "ruleName": "",
@@ -427,7 +455,7 @@
                     }
                 ],
                 "participation": "Individual",
-                "participationNo": "",
+                "participationNo": "1",
                 "description": [
                     {
                         "roundNo": "",
@@ -447,7 +475,11 @@
                         ]
                     }
                 ],
-                "timeBreakdown": [],
+                "timeBreakdown": [
+                    {
+                        "des": "NA"
+                    }
+                ],
                 "judgingCriteria": [
                     {
                         "des": "Creativity (20%)"
@@ -476,7 +508,7 @@
     },
     {
         "id": "rythmicRivals",
-        "name": "Rhythmic Rivals(Est: 1hr 30min):-",
+        "name": "Rhythmic Rivals",
         "rule": [
             {
                 "ruleName": "English :-",
@@ -486,7 +518,7 @@
                     }
                 ],
                 "participation": "Individual",
-                "participationNo": "",
+                "participationNo": "1",
                 "description": [
                     {
                         "roundNo": "",
@@ -503,7 +535,11 @@
                         ]
                     }
                 ],
-                "timeBreakdown": [],
+                "timeBreakdown": [
+                    {
+                        "des": "NA"
+                    }
+                ],
                 "judgingCriteria": [
                     {
                         "des": "Creativity (10%)"
@@ -532,9 +568,13 @@
             },
             {
                 "ruleName": "Hindi :-",
-                "overview": [],
+                "overview": [
+                    {
+                        "des": "NA"
+                    }
+                ],
                 "participation": "Individual",
-                "participationNo": "",
+                "participationNo": "1",
                 "description": [
                     {
                         "roundNo": "",
@@ -554,7 +594,11 @@
                         ]
                     }
                 ],
-                "timeBreakdown": [],
+                "timeBreakdown": [
+                    {
+                        "des": "NA"
+                    }
+                ],
                 "judgingCriteria": [
                     {
                         "des": "रचनात्मकता  (20%)"
@@ -586,7 +630,7 @@
     },
     {
         "id": "memeLit",
-        "name": "Meme Lit:-",
+        "name": "Meme Lit",
         "rule": [
             {
                 "ruleName": "",
@@ -596,7 +640,7 @@
                     }
                 ],
                 "participation": "Individual",
-                "participationNo": "",
+                "participationNo": "1",
                 "description": [
                     {
                         "roundNo": "",
@@ -631,7 +675,11 @@
                         ]
                     }
                 ],
-                "timeBreakdown": [],
+                "timeBreakdown": [
+                    {
+                        "des": "NA"
+                    }
+                ],
                 "judgingCriteria": [
                     {
                         "des": "Creativity (10%)"
@@ -646,14 +694,18 @@
                         "des": "Humour (30%)"
                     }
                 ],
-                "notes": []
+                "notes": [
+                    {
+                        "des": "NA"
+                    }
+                ]
             }
         ],
         "participationFee": 50
     },
     {
-        "id": "palleteProwess",
-        "name": "Palette Prowess(Est: 2 hrs) :-",
+        "id": "palletProwess",
+        "name": "Palette Prowess",
         "rule": [
             {
                 "ruleName": "",
@@ -663,7 +715,7 @@
                     }
                 ],
                 "participation": "Individual",
-                "participationNo": "",
+                "participationNo": "1",
                 "description": [
                     {
                         "roundNo": "",
@@ -683,7 +735,11 @@
                         ]
                     }
                 ],
-                "timeBreakdown": [],
+                "timeBreakdown": [
+                    {
+                        "des": "NA"
+                    }
+                ],
                 "judgingCriteria": [
                     {
                         "des": "Originality (20%)"
@@ -717,8 +773,8 @@
         "participationFee": 100
     },
     {
-        "id": "pixelQuill",
-        "name": "PixelQuill(Est: 20min) :-",
+        "id": "PixelQuill",
+        "name": "Pixel Quill",
         "rule": [
             {
                 "ruleName": "",
@@ -728,7 +784,7 @@
                     }
                 ],
                 "participation": "Individual",
-                "participationNo": "",
+                "participationNo": "1",
                 "description": [
                     {
                         "roundNo": "",
@@ -754,7 +810,11 @@
                         ]
                     }
                 ],
-                "timeBreakdown": [],
+                "timeBreakdown": [
+                    {
+                        "des": "NA"
+                    }
+                ],
                 "judgingCriteria": [
                     {
                         "des": "Skill and Technique (30%)"
@@ -788,8 +848,8 @@
         "participationFee": 100
     },
     {
-        "id": "creaseCrisp",
-        "name": "Crease Crisp(Est: 60 min) :-",
+        "id": "CreaseCrisp",
+        "name": "Crease Crisp",
         "rule": [
             {
                 "ruleName": "",
@@ -799,7 +859,7 @@
                     }
                 ],
                 "participation": "Individual",
-                "participationNo": "",
+                "participationNo": "1",
                 "description": [
                     {
                         "roundNo": "",
@@ -819,7 +879,11 @@
                         ]
                     }
                 ],
-                "timeBreakdown": [],
+                "timeBreakdown": [
+                    {
+                        "des": "NA"
+                    }
+                ],
                 "judgingCriteria": [
                     {
                         "des": "Originality - 20%"
@@ -853,8 +917,8 @@
         "participationFee": 100
     },
     {
-        "id": "dictionSnap",
-        "name": "Diction Snap(Est: 60 min) :-",
+        "id": "DictionSnap",
+        "name": "Diction Snap",
         "rule": [
             {
                 "ruleName": "",
@@ -864,7 +928,7 @@
                     }
                 ],
                 "participation": "Individual",
-                "participationNo": "",
+                "participationNo": "1",
                 "description": [
                     {
                         "roundNo": "Rules for round 1:",
@@ -907,8 +971,16 @@
                         ]
                     }
                 ],
-                "timeBreakdown": [],
-                "judgingCriteria": [],
+                "timeBreakdown": [
+                    {
+                        "des": "NA"
+                    }
+                ],
+                "judgingCriteria": [
+                    {
+                        "des": "NA"
+                    }
+                ],
                 "notes": [
                     {
                         "des": "Organizers reserve the right to modify rules for fairness."
@@ -922,8 +994,8 @@
         "participationFee": 100
     },
     {
-        "id": "standup",
-        "name": "Standup (Est:1hr 30mins)",
+        "id": "STANDUP",
+        "name": "Standup",
         "rule": [
             {
                 "ruleName": "",
@@ -933,7 +1005,7 @@
                     }
                 ],
                 "participation": "Individual",
-                "participationNo": "",
+                "participationNo": "1",
                 "description": [
                     {
                         "roundNo": "",
@@ -953,7 +1025,11 @@
                         ]
                     }
                 ],
-                "timeBreakdown": [],
+                "timeBreakdown": [
+                    {
+                        "des": "NA"
+                    }
+                ],
                 "judgingCriteria": [
                     {
                         "des": "Originality (20%)"
@@ -982,7 +1058,7 @@
     },
     {
         "id": "aurFIR",
-        "name": "Aur Fir (est 1hr 30mins) :-",
+        "name": "Aur Fir",
         "rule": [
             {
                 "ruleName": "",
@@ -992,7 +1068,7 @@
                     }
                 ],
                 "participation": "Individual",
-                "participationNo": "",
+                "participationNo": "1",
                 "description": [
                     {
                         "roundNo": "",
@@ -1056,8 +1132,8 @@
         "participationFee": 200
     },
     {
-        "id": "stellarQuizzes",
-        "name": "Stellar Quizzes :-",
+        "id": "StellarQuizzes",
+        "name": "Stellar Quizzes",
         "rule": [
             {
                 "ruleName": "",
@@ -1098,16 +1174,28 @@
                         ]
                     }
                 ],
-                "timeBreakdown": [],
-                "judgingCriteria": [],
-                "notes": []
+                "timeBreakdown": [
+                    {
+                        "des": "NA"
+                    }
+                ],
+                "judgingCriteria": [
+                    {
+                        "des": "NA"
+                    }
+                ],
+                "notes": [
+                    {
+                        "des": "NA"
+                    }
+                ]
             }
         ],
         "participationFee": "200 per team"
     },
     {
-        "id": "nukkadNatak",
-        "name": "Nukkad Natak(Est: 2 hr 30 min)",
+        "id": "NukkadNatak",
+        "name": "Nukkad Natak",
         "rule": [
             {
                 "ruleName": "",
@@ -1117,10 +1205,10 @@
                     }
                 ],
                 "participation": "Team",
-                "participationNo": "",
+                "participationNo": "1",
                 "description": [
                     {
-                        "roundNo": ":",
+                        "roundNo": "",
                         "rounds": [
                             {
                                 "des": "Participants will have to submit a pdf file containing the following things in advance: Name of College, List of Participants, Script."
@@ -1152,7 +1240,11 @@
                         ]
                     }
                 ],
-                "timeBreakdown": [],
+                "timeBreakdown": [
+                    {
+                        "des": "NA"
+                    }
+                ],
                 "judgingCriteria": [
                     {
                         "des": "Acting(30%)"
@@ -1189,8 +1281,8 @@
         "participationFee": "500 per team"
     },
     {
-        "id": "theatre",
-        "name": "Theatre (Est. 5 hrs) :-",
+        "id": "Theatre",
+        "name": "Theatre",
         "rule": [
             {
                 "ruleName": "",
@@ -1200,7 +1292,7 @@
                     }
                 ],
                 "participation": "Team",
-                "participationNo": "",
+                "participationNo": "1",
                 "description": [
                     {
                         "roundNo": ":",
@@ -1294,8 +1386,8 @@
         "participationFee": "400 per team"
     },
     {
-        "id": "monoact",
-        "name": "Monoact (Est. 2 hrs) :-",
+        "id": "Monoact",
+        "name": "Monoact",
         "rule": [
             {
                 "ruleName": "",
@@ -1304,8 +1396,8 @@
                         "des": "Monoact entails performance by a single person portraying an enthralling act of one or more characters. In drama, it is the vocalization of a character‘s thoughts, in literature, the verbalization. A dramatic mono-act is any recital of some duration put forth by the performer."
                     }
                 ],
-                "participation": "Team",
-                "participationNo": "",
+                "participation": "Individual",
+                "participationNo": "1",
                 "description": [
                     {
                         "roundNo": ":",
@@ -1371,8 +1463,8 @@
         "participationFee": 100
     },
     {
-        "id": "filmyEpics",
-        "name": "Filmy Epics :-",
+        "id": "FilmyEpics",
+        "name": "Filmy Epics",
         "rule": [
             {
                 "ruleName": "",
@@ -1382,7 +1474,7 @@
                     }
                 ],
                 "participation": "There is no limit to the number of cast and crew members",
-                "participationNo": "",
+                "participationNo": "No Limit",
                 "description": [
                     {
                         "roundNo": ":",
@@ -1432,7 +1524,11 @@
                         ]
                     }
                 ],
-                "timeBreakdown": [],
+                "timeBreakdown": [
+                    {
+                        "des": "NA"
+                    }
+                ],
                 "judgingCriteria": [
                     {
                         "des": "Effective portrayal of theme"
