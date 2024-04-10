@@ -24,7 +24,7 @@
       </ol>
     </section>
   </div>
-  <TeamComp />
+  <!-- <TeamComp /> -->
 </template>
 
 <style>
@@ -238,10 +238,10 @@
 </style>
 
 <script>
-import TeamComp from '@/components/TeamComp.vue';
+// import TeamComp from '@/components/TeamComp.vue';
 export default {
   name: "TimeShedule",
-  components: { TeamComp },
+  // components: { TeamComp },
   data() {
     return {
       timeLine: [
