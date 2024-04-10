@@ -105,11 +105,11 @@
   }
 
   .btn {
-    border: 2px solid var(--theme1);
-    background-color: var(--theme1);
-    font-weight: 500;
-    border-radius: 0;
-    padding: auto 25px;
+    border: 2px solid var(--theme1) !important;
+    background-color: var(--theme1) !important;
+    font-weight: 500 !important;
+    border-radius: 0 !important;
+    padding: auto 25px !important;
     min-width: 20% !important;
   }
   .btn:hover {

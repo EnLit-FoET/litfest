@@ -15,7 +15,6 @@
 	</section>
 	<AboutPage />
 	<EventSection />
-	<SponsorSection />
 	<FooterSection />
 </template>
 
@@ -24,11 +23,10 @@ import EventSection from "./EventSection.vue";
 import TimeBox from "../components/TimeBox.vue";
 import AboutPage from "@/components/AboutPage.vue";
 import FooterSection from "@/components/FooterSection.vue";
-import SponsorSection from "@/components/SponsorSection.vue";
 
 export default {
 	name: "HomeView",
-	components: { EventSection, TimeBox, AboutPage, FooterSection, SponsorSection },
+	components: { EventSection, TimeBox, AboutPage, FooterSection },
 };
 </script>
 

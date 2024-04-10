@@ -146,7 +146,7 @@
                 ]
             }
         ],
-        "participationFee": 100
+        "participationFee": 50
     },
     {
         "id": "clashOfOpinions",
@@ -358,7 +358,7 @@
                 ]
             }
         ],
-        "participationFee": 200
+        "participationFee": 50
     },
     {
         "id": "oration",
@@ -441,7 +441,7 @@
                 ]
             }
         ],
-        "participationFee": 100
+        "participationFee": 50
     },
     {
         "id": "nazm",
@@ -504,7 +504,7 @@
                 ]
             }
         ],
-        "participationFee": 150
+        "participationFee": 50
     },
     {
         "id": "rythmicRivals",
@@ -626,7 +626,7 @@
                 ]
             }
         ],
-        "participationFee": 100
+        "participationFee": 50
     },
     {
         "id": "memeLit",
@@ -770,7 +770,7 @@
                 ]
             }
         ],
-        "participationFee": 100
+        "participationFee": 50
     },
     {
         "id": "PixelQuill",
@@ -845,7 +845,7 @@
                 ]
             }
         ],
-        "participationFee": 100
+        "participationFee": 50
     },
     {
         "id": "CreaseCrisp",
@@ -914,7 +914,7 @@
                 ]
             }
         ],
-        "participationFee": 100
+        "participationFee": 50
     },
     {
         "id": "DictionSnap",
@@ -991,7 +991,7 @@
                 ]
             }
         ],
-        "participationFee": 100
+        "participationFee": 50
     },
     {
         "id": "STANDUP",
@@ -1054,7 +1054,7 @@
                 ]
             }
         ],
-        "participationFee": 200
+        "participationFee": 50
     },
     {
         "id": "aurFIR",
@@ -1129,7 +1129,7 @@
                 ]
             }
         ],
-        "participationFee": 200
+        "participationFee": 50
     },
     {
         "id": "StellarQuizzes",
@@ -1191,11 +1191,11 @@
                 ]
             }
         ],
-        "participationFee": "200 per team"
+        "participationFee": "50 per team"
     },
     {
         "id": "NukkadNatak",
-        "name": "Nukkad Natak",
+        "name": "Natya Nirvana",
         "rule": [
             {
                 "ruleName": "",
@@ -1278,11 +1278,11 @@
                 ]
             }
         ],
-        "participationFee": "500 per team"
+        "participationFee": "50 per team"
     },
     {
         "id": "Theatre",
-        "name": "Theatre",
+        "name": "Cameo",
         "rule": [
             {
                 "ruleName": "",
@@ -1383,17 +1383,17 @@
                 ]
             }
         ],
-        "participationFee": "400 per team"
+        "participationFee": "50 per team"
     },
     {
         "id": "Monoact",
-        "name": "Monoact",
+        "name": "Spotlight",
         "rule": [
             {
                 "ruleName": "",
                 "overview": [
                     {
-                        "des": "Monoact entails performance by a single person portraying an enthralling act of one or more characters. In drama, it is the vocalization of a character‘s thoughts, in literature, the verbalization. A dramatic mono-act is any recital of some duration put forth by the performer."
+                        "des": "Monoact entails performance by a single person portraying an enthralling act of one or more characters. In drama, it is the vocalization of a character's thoughts, in literature, the verbalization. A dramatic mono-act is any recital of some duration put forth by the performer."
                     }
                 ],
                 "participation": "Individual",
@@ -1460,7 +1460,7 @@
                 ]
             }
         ],
-        "participationFee": 100
+        "participationFee": 50
     },
     {
         "id": "FilmyEpics",
@@ -1473,8 +1473,8 @@
                         "des": "Short film making competition, the ultimate platform that each artist deserves. Amaze your viewers with your perspective, aesthetic sense, emotion, or simple ingenuity of idea. So, ignite the director, cinematographer, the sound specialist, the editor or simply an art connoisseur inside you waiting to leap out."
                     }
                 ],
-                "participation": "There is no limit to the number of cast and crew members",
-                "participationNo": "No Limit",
+                "participation": "Team",
+                "participationNo": "There is no limit to the number of cast and crew members",
                 "description": [
                     {
                         "roundNo": "",
@@ -1568,6 +1568,6 @@
                 ]
             }
         ],
-        "participationFee": 200
+        "participationFee": 50
     }
 ]

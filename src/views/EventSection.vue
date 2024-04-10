@@ -26,7 +26,6 @@
           </div>
         </div>
       </section>
-      <div class="timeline"></div>
     </div>
     <CompetitionSection />
   </section>
@@ -44,8 +43,11 @@
   width: 100%;
 }
 
-#Workshop{
-  background: url(../assets/images/guests/workshop.png);
+#WritingWorkshop{
+  background: url(../assets/images/guests/writework.png);
+}
+#ArtWorkshop{
+  background: url(../assets/images/guests/artwork.png);
 }
 
 #ArtExhibition {
@@ -104,7 +106,7 @@ export default {
           guestName: " Panel Discussion",
           guestImage: require("../assets/images/guests/panel.png"),
           eventabout:
-            "lorem ipsum dolor sit amet, consect lorem",
+            "Opinion and discourse, the hallmarks of the civilized, beckons us. Noblesse oblige demands our unity as we stand witness to the revelation of defining subjects. In our quest for understanding, painting the world with the vibrant hues of diverse perspectives.",
         },
       ],
       exhibitions: [
@@ -122,10 +124,16 @@ export default {
             " Immerse yourself in a haven of words, ideas, and stories that transcend boundaries. From classic novels to contemporary bestsellers, the book fair promises a treasure trove for every avid reader. The world of literature scattered by Being Bookish and Universal Books awaits you to delve into the entrancing world of literature. Come, explore, and let the pages of these literary wonders ignite your imagination.",
         },
         {
-          id: "Workshop",
-          name: "Workshops",
+          id: "WritingWorkshop",
+          name: "Writing Workshop",
           eventabout:
-            "Content",
+            "Join us as we embark on a journey of self-discovery, imaginative exploration, and most importantly, the power of expression in our writing workshop. Come with us as we venture into uncharted territories, delve into the depths of creativity, and unearth the writer within you. Step into the world of writers, where each word and idea shared is a stride towards realizing your own literary potential. Join our community of writers, where inspiration, creation, and learning unite, regardless of your experience level or background.",
+        },
+        {
+          id: "ArtWorkshop",
+          name: "Art Workshop",
+          eventabout:
+            "Join us as we set off on a voyage of introspection, creative vision, and—above all—expression in our art workshop. Come along on this journey with us as we explore new frontiers, tap into the depths of creativity, and uncover the inner artist. Enter the realm of artists, where each brushstroke and concept exchanged is a step toward realizing your own creative potential. Come along with us as we inspire, create, and learn as a community of artists, no matter how experienced or inexperienced.",
         },
       ],
     };

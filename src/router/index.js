@@ -10,10 +10,11 @@ const router = createRouter({
       name: 'home',
       component: HomeView
     },
-    {path: "/competitions", component: () => import("../views/CompetitionSection.vue")},
+    {path: "/sponsor", component: () => import("../components/SponsorSection.vue")},
     {path: "/dashboard", component: DashBoard, meta: {requiresAuth : true}},
     {path: "/rulebook/:to", component: () => import("../components/RuleBook.vue"), meta: {requiresAuth : true}},
     {path: "/register", component: () => import("../components/SignUp.vue")},
+    {path: "/timeline", component: () => import("../views/TimeLine.vue")},
     {path: "/admin/requests", component: () => import("../views/ParticipationReq.vue"), meta: {requiresAuth : true}},
   ]
 })

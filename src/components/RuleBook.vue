@@ -47,17 +47,20 @@
       </ul>
     </div>
     <p><span>Participation Fee :</span> {{ rulebook.participationFee }}</p>
-    <button
-      @click="this.registerForEvent(rulebook.id)"
-      class="btn"
-      style="margin-bottom: 75px"
-    >
-      Register
-    </button>
+    <router-link class="btn custom-btn" style="margin-bottom: 75px" to="/dashboard">
+      Register From Dashboard
+    </router-link>
   </div>
 </template>
 
 <style>
+
+.custom-btn{
+  text-align: center;
+  color: #fff;
+  text-decoration: none;
+  padding: 11px 1%;
+}
 .rule {
   width: 100%;
   min-height: 100vh;

@@ -1,7 +1,21 @@
 <template>
+  <div class="sponsorus">
+    <hgroup>
+      <h1>SPONSORS AND PARTNERS</h1>
+    </hgroup>
+    <h4>Interested in sponsoring us?</h4>
+    <div class="sponsor-btn-cont">
+      <a href="" class="sponsor-link" target="_blank">Event Brochure</a>
+      <a href="mailto:contact@enlit.club" class="sponsor-link" target="_blank">Get in touch</a>
+    </div>
+  </div>
   <h1 class="main-head">Associates</h1>
   <div class="marquee">
-    <div v-for="(slide, index) in slides" :key="index" class="ass-slide marquee-content scroll">
+    <div
+      v-for="(slide, index) in slides"
+      :key="index"
+      class="ass-slide marquee-content scroll"
+    >
       <img
         v-for="ass in associates"
         :key="ass.id"
@@ -10,7 +24,7 @@
       />
     </div>
   </div>
-  <h1 class="main-head">Our Sponsor</h1>
+  <h1 class="main-head">Literature Partner</h1>
   <div class="sponsors">
     <img
       v-bind:src="sponsor.image"
@@ -28,62 +42,65 @@
       :key="media.id"
     />
   </div>
-  <div class="sponsorus">
-    <div class="spform">
-      <form>
-        <fieldset role="group">
-          <input
-            name="email"
-            type="email"
-            placeholder="Enter your email"
-            autocomplete="email"
-          />
-          <input type="submit" value="Sponsor Us" style="background-color: var(--theme1);"/>
-        </fieldset>
-      </form>
-    </div>
-  </div>
+  <div class="space"></div>
 </template>
 
 <style>
+.space{
+  height: 70px;
+  width: 100%;
+}
+.sponsor-link {
+  color: #fff;
+  background-color: rgba(0, 128, 128, 0);
+  border: 1px solid teal;
+  padding: 10px 2%;
+  border-radius: 0 !important;
+  text-decoration: none;
+  margin-right: 17px;
+  margin-top: 15px;
+}
 
-.sponsorus{
+.sponsor-link:hover {
+  background-color: teal;
+}
+
+.sponsor-btn-cont{
   width: 100%;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  margin-bottom: 40px;
-}
-.spform{
-  width: 80%;
-  display: flex;
   justify-content: center;
+}
+
+.sponsorus {
+  width: 100%;
+  display: flex;
   align-items: center;
-  height: 40vh;
+  justify-content: center;
+  height: 80vh;
+  flex-direction: column;
 }
 
-.spform form{
-  width: 60%;
-}
-
-.media-partners, .sponsors {
+.media-partners,
+.sponsors {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
 }
 
-.media-partners img, .sponsors img{
+.media-partners img,
+.sponsors img {
   width: 300px;
   background-color: var(--theme2);
 }
 .main-head {
   padding: 4% 0;
   margin: 2% 0;
-  font-size: 2.3em;
+  font-size: 2em;
+  text-transform: uppercase;
   text-align: center;
   color: var(--theme2);
 }
-
 
 .marquee::before,
 .marquee::after {
@@ -136,7 +153,7 @@
     transform: translateX(0);
   }
   to {
-    transform: translateX(calc(-100% - 1vw)); 
+    transform: translateX(calc(-100% - 1vw));
   }
 }
 
@@ -152,7 +169,6 @@
   height: 150px;
   margin: 0 40px;
 }
-
 
 @media screen and (max-width: 350px) {
   .media-partners img {

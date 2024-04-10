@@ -1,5 +1,5 @@
 <template>
-  <header class="container-fluid">
+  <header class="container-fluid navbar" :class="{ 'background-1': isBackground1, 'background-2': isBackground2 }">
     <nav>
       <ul>
         <li>
@@ -10,26 +10,35 @@
       </ul>
       <ul :aria-busy="this.loading">
         <li v-if="!loggedIn && !loading">
-          <router-link
-            role="button"
-            class="outline contrast"
-            to="/register"
+          <router-link role="button" class="outline contrast" to="/register"
             >Login</router-link
           >
         </li>
         <li v-else-if="loggedIn">
           <ul v-if="!this.loading">
             <li>
-              <router-link
-                to="/" style="color: #fff !important;"
-              >Home
+              <router-link to="/" style="color: #fff !important"
+                >Home
               </router-link>
             </li>
             <li>
-              <router-link
-                to="/dashboard"
-              >
-              <img :src="user.photoURL" height="35" width="35" style="object-fit: cover;border-radius: 50%;"/>
+              <router-link to="/timeline" style="color: #fff !important"
+                >Schedule
+              </router-link>
+            </li>
+            <li>
+              <router-link to="/sponsor" style="color: #fff !important"
+                >Sponsors
+              </router-link>
+            </li>
+            <li>
+              <router-link to="/dashboard">
+                <img
+                  :src="user.photoURL"
+                  height="35"
+                  width="35"
+                  style="object-fit: cover; border-radius: 50%"
+                />
               </router-link>
             </li>
             <li>
@@ -50,8 +59,24 @@
 </template>
 
 <style>
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
 
-.logo:hover{
+.background-1 {
+  background-color: #13171f00; 
+}
+
+.background-2 {
+  background-color: #13171f2f; 
+  /* border-bottom: 1px solid rgba(0, 128, 128, 0.5); */
+  box-shadow: 0 8px 32px 0 rgba(255, 255, 255, 0.2);
+   backdrop-filter: blur(15px);
+}
+
+.logo:hover {
   text-decoration: none;
 }
 .route-link {
@@ -70,31 +95,53 @@
 </style>
 
 <script>
-  import {auth} from '@/utils'
-  export default {
+import { auth } from "@/utils";
+export default {
   data() {
     return {
       loading: true,
       loggedIn: false,
-      user: null
+      user: null,
+      isBackground1: false,
+      isBackground2: false,
     };
   },
   created() {
-    auth.onAuthStateChanged((user)=>{
-      if(user){
+    auth.onAuthStateChanged((user) => {
+      if (user) {
         this.loggedIn = true;
         this.user = user;
-      }else{
+      } else {
         this.loggedIn = false;
       }
-      this.loading= false;
+      this.loading = false;
     });
+    window.addEventListener("scroll", this.handleScroll);
+  },
+  beforeUnmount() {
+    window.removeEventListener("scroll", this.handleScroll);
   },
   methods: {
     logout() {
       auth.signOut();
     },
+    handleScroll() {
+  const position = window.scrollY;
+
+  if (position > 100) {
+    this.isBackground1 = false;
+    this.isBackground2 = true;
+  } else {
+    this.isBackground1 = true;
+    this.isBackground2 = false;
+  }
+  
+  // Reset background colors when back to initial position
+  if (position === 0) {
+    this.isBackground1 = false;
+    this.isBackground2 = false;
+  }
+},
   },
 };
 </script>
-

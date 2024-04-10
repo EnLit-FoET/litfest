@@ -1,9 +1,9 @@
 <template>
     <dialog :open="this.open">
-        <article>
-            <header>
-                <p>
-                    <strong>🗓️  Register for {{ event.name }}</strong>
+        <article class="modal">
+            <header style="margin: 0 !important;">
+                <p >
+                    <strong class="important-inf">🗓️  Register for {{ event.name }}</strong>
                 </p>
             </header>
             <ul>
@@ -28,17 +28,64 @@
                     </ul>
                     <img src="@/assets/images/qr-code.png">
                 </p>
-                <button type="submit" ref="formbtn" hidden></button>
+                <button type="submit" ref="formbtn" hidden ></button>
             </form>
             <footer>
-                <button type="subimt" @click="this.$refs.formbtn.click()">Confirm</button>
-                <button className="secondary" @click="this.$emit('close')">
+                <button type="subimt" class="link-reg" @click="this.$refs.formbtn.click()">Confirm</button>
+                <button class="reg-link" @click="this.$emit('close')">
                     Cancel
                 </button>
             </footer>
         </article>
     </dialog>
 </template>
+
+<style>
+.modal::-webkit-scrollbar {
+    display: none;
+  }
+  .modal {
+    scroll-behavior: smooth;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    box-sizing: border-box;
+  }
+
+  .important-inf {
+  font-weight: 700 !important;
+  color: teal !important;
+  font-size: larger !important;
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff00;
+  text-transform: uppercase;
+}
+
+.link-reg {
+  color: #fff;
+  background-color: teal;
+  border: 1px solid teal;
+  padding: 10px 2%;
+  width: 30%;
+  border-radius: 0 !important;
+}
+.link-reg:hover {
+  background-color: rgba(0, 128, 128, 0);
+}
+
+.reg-link{
+    color: #fff;
+    background-color: rgba(0, 128, 128, 0);
+    border: 1px solid teal;
+    padding: 10px 2%;
+    width: 30%;
+    border-radius: 0 !important;
+}
+
+.reg-link:hover{
+    background-color: teal;
+}
+</style>
 
 <script>
 import { db } from '@/utils';
