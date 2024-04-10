@@ -10,7 +10,7 @@ const router = createRouter({
       name: 'home',
       component: HomeView
     },
-    {path: "/sponsor", component: () => import("../components/SponsorSection.vue")},
+    // {path: "/sponsor", component: () => import("../components/SponsorSection.vue")},
     {path: "/dashboard", component: DashBoard, meta: {requiresAuth : true}},
     {path: "/rulebook/:to", component: () => import("../components/RuleBook.vue"), meta: {requiresAuth : true}},
     {path: "/register", component: () => import("../components/SignUp.vue")},

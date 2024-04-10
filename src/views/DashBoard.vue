@@ -1,10 +1,8 @@
 <template>
-  <div class="container" :aria-busy="this.loading">
-    <div v-if="this.loading">
-      <p>Loading...</p>
-    </div>
+  <div class="container">
+    <LoaderComp v-if="this.loading" />
     <div v-else>
-      <RegisterForm v-if="!this.registered" />
+      <RegisterForm v-if="!this.registered" @register="this.registered=true"/>
       <div v-else>
         <h1>Welcome, <span style="color: teal;">{{ this.userData.name }} </span></h1>
         <article v-if="this.isEventLive && this.isRegforcurrentEvent">
@@ -217,6 +215,7 @@ import GreenDot from "@/components/GreenDot.vue";
 import RegisterForm from "@/components/RegisterForm.vue";
 import SubmissionBox from "@/components/SubmissionBox.vue";
 import RegisterModal from "@/components/RegisterModal.vue";
+import LoaderComp from "@/components/LoaderComp.vue";
 import { auth, db, storage } from "@/utils";
 import {
   getDoc,
@@ -253,6 +252,7 @@ export default {
     GreenDot,
     SubmissionBox,
     RegisterModal,
+    LoaderComp
   },
   created() {
     let usersDb = collection(db, "users");

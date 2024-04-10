@@ -2,7 +2,7 @@
     <dialog :open="this.open">
         <article class="modal">
             <header style="margin: 0 !important;">
-                <p >
+                <p>
                     <strong class="important-inf">🗓️  Register for {{ event.name }}</strong>
                 </p>
             </header>
@@ -11,10 +11,15 @@
                 <li>Participation Fee: {{event.participationFee}}</li>
             </ul>
             <form @submit.prevent="this.checkAll">
-                <p v-if="event.members">This is a team event. Make sure all the members are registered on the website and enter the registered emails here.</p>
-                <p v-if="event.members">
-                    <input type="email" v-for="i in event.members" :key="i" :id="'member' + i" v-model="this.members[i-1]" :placeholder="'Enter registered email for member ' + i" required>
-                </p>
+                <div v-if="event.members>1">
+                    <p>This is a team event. Enter your team name and members' name. </p>
+                    <p>
+                        <input type="text" id="team-name" v-model="teamName" placeholder="Enter team name" required>
+                    </p>
+                    <p>
+                        <input type="email" v-for="i in event.members-1" :key="i" :id="'member' + i" v-model="this.members[i-1]" :placeholder="'Enter registered email for member ' + i" required>
+                    </p>
+                </div>
                 <p>
                     <label for="t-no">Pay on the QR code given below and enter transaction number.</label>
                     <input type="text" id="t-no" placeholder="Enter transaction ID" v-model="transactionNo" required>
@@ -31,7 +36,7 @@
                 <button type="submit" ref="formbtn" hidden ></button>
             </form>
             <footer>
-                <button type="subimt" class="link-reg" @click="this.$refs.formbtn.click()">Confirm</button>
+                <button type="subimt" class="link-reg" @click="this.$refs.formbtn.click()" :aria-busy="this.registering">Confirm</button>
                 <button class="reg-link" @click="this.$emit('close')">
                     Cancel
                 </button>
@@ -94,7 +99,9 @@ export default{
     data(){
         return {
             members : [],
-            transactionNo : ''
+            teamName : '',
+            transactionNo : '',
+            registering : false
         }
     },
     props : ['open', 'event', 'user_email'],
@@ -107,16 +114,7 @@ export default{
     },
     methods : {
         async checkAll(){
-            let allFilled = true;
-            if(this.event.members>1){
-                for(let i in this.members){
-                    if(!this.members[i]){
-                        allFilled = false;
-                        break;
-                    }
-                }
-            }
-            if(allFilled && this.transactionNo){
+            if(this.teamName && this.transactionNo){
                 let usersDb = collection(db, 'users');
                 if(this.event.members>1){
                     for(let i in this.members){
@@ -136,6 +134,7 @@ export default{
                     transactionNo : this.transactionNo,
                     pending : true
                 }
+                this.registering = true;
                 this.registerForEvent(participationReq);
             }
             else{
@@ -172,6 +171,7 @@ export default{
                 participation: requestDoc,
                 confirmed: false
             })
+            this.registering = false;
             this.$emit('close');
         },
     }

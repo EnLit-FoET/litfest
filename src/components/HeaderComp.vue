@@ -26,11 +26,11 @@
                 >Schedule
               </router-link>
             </li>
-            <li>
+            <!-- <li>
               <router-link to="/sponsor" style="color: #fff !important"
                 >Sponsors
               </router-link>
-            </li>
+            </li> -->
             <li>
               <router-link to="/dashboard">
                 <img
@@ -63,6 +63,7 @@
   position: sticky;
   top: 0;
   z-index: 999;
+  transition: 0.3s;
 }
 
 .background-1 {

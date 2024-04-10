@@ -1,5 +1,6 @@
 <template>
-    <div class="container">
+    <LoaderComp v-if="this.loading"/>
+    <div class="container" v-else-if="this.allowed">
         <h1>Register</h1>
         <form @submit.prevent="registerUser">
             <div>
@@ -23,6 +24,7 @@
                     <option value="2nd">2nd Year</option>
                     <option value="3rd">3rd Year</option>
                     <option value="4th">4th Year</option>
+                    <option value="5th">5th Year</option>
                 </select>
             </div>
             <div>
@@ -32,11 +34,16 @@
             <button type="submit" class="btn">Register</button>
         </form>
     </div>
+    <div v-else>
+        <h1>Registration is closed</h1>
+        <h4>See you at the event!</h4>
+    </div>
 </template>
 
 <script>
     import { auth,db } from "@/utils"
     import { collection, setDoc, doc, getDoc } from "firebase/firestore";
+import LoaderComp from "./LoaderComp.vue";
     export default{
         data(){
             return{
@@ -45,8 +52,21 @@
                 college : "",
                 year : "",
                 phone : "",
-                collegeList : []
+                collegeList : [],
+                allowed: false,
+                loading : true
             }
+        },
+        created(){
+            let varDoc = doc(collection(db, "config"), "variables");
+            getDoc(varDoc).then((doc) => {
+                if (doc.exists()) {
+                    this.allowed = doc.data().register;
+                }
+            })
+            .finally(() => {
+                this.loading = false;
+            });
         },
         mounted(){
             auth.onAuthStateChanged((user) => {
@@ -65,6 +85,11 @@
         },
         methods:{
             async registerUser(){
+                this.loading = true;
+                if(!this.allowed){
+                    this.loading = false;
+                    return;
+                }
                 let usersDb = collection(db, "users");
                 let user = auth.currentUser;
                 let userData = {
@@ -77,8 +102,12 @@
                     events :[]
                 }
                 await setDoc(doc(usersDb, user.email), userData);
-                location.reload()
+                this.$emit("register")
+                this.loading=false
             }
+        },
+        components : {
+            LoaderComp
         }
     }
 </script>
