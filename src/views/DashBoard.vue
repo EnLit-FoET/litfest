@@ -5,6 +5,7 @@
       <RegisterForm v-if="!this.registered" @register="this.registered=true"/>
       <div v-else>
         <h1>Welcome, <span style="color: teal;">{{ this.userData.name }} </span></h1>
+                <router-link v-if="userData.admin" to="/admin">Admin</router-link>
         <article v-if="this.isEventLive && this.isRegforcurrentEvent">
           <header><GreenDot /> Event is happening</header>
           <hgroup>
