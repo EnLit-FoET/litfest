@@ -10,6 +10,9 @@
 		<TimeBox />
 		<div>
 			<button><router-link to="/dashboard">Register Now >>></router-link></button>
+			<button style="background-color: transparent; border: 1px solid white;"><a href="https://forms.gle/4fsHKyc6WnnN6qhR7" target="_blank">Register through Google Form</a></button>
+			<br>
+			<button style="background-color: transparent; border: 1px solid white;"><a href="https://chat.whatsapp.com/JpYZMTKr9gkGSOvgRUC1yx" target="_blank">Join our Community</a></button>
 			<button style="background-color: transparent; border: 1px solid white;"><a href="#competition">Competitions >>></a></button>
 		</div>
 	</section>
